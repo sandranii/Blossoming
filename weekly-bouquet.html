@@ -5,8 +5,227 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>週花訂閱</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/weekly-bouquet.css">
+    <script src="javascript/weekly-bouquet.js"></script>
 </head>
 <body>
-    
+    <header>
+        <nav class="main-nav-bar">
+            <div class="main-nav-container">
+                <a href="index.html" class="logo-link">
+                    <img class="logo" src="icon/Logo A.svg" alt="">
+                </a>
+                <div class="main-menu-container">
+                    <ul class="main-menu-list">
+                        <li class="main-menu-list-item">
+                            <a class="main-menu-list-item-label" href="">新鮮花束</a>
+                        </li>
+                        <li class="main-menu-list-item">
+                            <a class="main-menu-list-item-label" href="">永生花</a>
+                        </li>
+                        <li class="main-menu-list-item">
+                            <a class="main-menu-list-item-label" href="">求婚花束</a>
+                        </li>
+                        <li class="main-menu-list-item">
+                            <a class="main-menu-list-item-label" href="">週花訂閱</a>
+                        </li>
+                        <li class="main-menu-list-item">
+                            <a class="main-menu-list-item-label" href="">客製商品</a>
+                        </li>
+                        <li class="main-menu-list-item">
+                            <a class="main-menu-list-item-label"  href="">花藝課程</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="action-menu">
+                    <a href="" class="action-menu cart">
+                        <img class="icon" src="icon/shopping-cart.svg" alt="">
+                    </a>
+                    <a href="" class="action-menu login">
+                        <img class="icon" src="icon/account.svg" alt=""></a>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <content>
+        <section>
+            <div class="wrap main">
+                <div class="canvas-area">
+                    <div class="canvas-bg">
+                        <div class="bg"></div>
+                        <div class="content">                  
+                            <div class="title-n-pic">
+                                <h2 class="title-EN">/ Weekly<br>Bouquet</h2>
+                                <h2 class="title-CH">週花<span>訂閱</span></h2>
+                                <div class="pic-area">
+                                    
+                                    <div class="picContainer large">
+                                        <img id="large" src="pic/weekly-bouquet/container-large.jpg" alt="">
+                                        <p class="nametag">#春</p>
+                                    </div>
+                                    <div class="group-small">
+                                        <div class="picContainer small">
+                                            <img class="small" src="pic/weekly-bouquet/container-large.jpg" alt="">
+                                        </div>
+                                        <div class="picContainer small">
+                                            <img class="small" src="pic/weekly-bouquet/container-small1.jpg" alt="">
+                                        </div>
+                                        <div class="picContainer small">
+                                            <img class="small" src="pic/weekly-bouquet/container-small2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="windows-n-form">
+                                <div class="windows">
+                                    <div class="picContainer windows">
+                                        <img src="pic/weekly-bouquet/window1.jpg" alt="" class="small">
+                                    </div>
+                                    <div class="picContainer windows">
+                                        <img src="pic/weekly-bouquet/window2.jpg" alt="" class="small">
+                                    </div>
+                                    <div class="windowFrame row"></div>
+                                    <div class="windowFrame col left"></div>
+                                    <div class="windowFrame col right"></div>
+                                </div>
+                                <div class="form">
+                                    <h3 class="subtitle">訂閱制服務｜生活週花</h3>
+                                    <div class="option-list">
+                                        <div class="option-list-item">
+                                            <p>款 式</p>
+                                            <button>經典</button>
+                                            <button>進階</button>
+                                        </div>
+                                        <div class="option-list-item">
+                                            <p>風 格</p>
+                                            <button>歐式繽紛</button>
+                                            <button>法式優雅</button>
+                                            <button>韓式清新</button>
+                                        </div>
+                                        <div class="option-list-item">
+                                            <p>主 題</p>
+                                            <button>七夕</button>
+                                            <button>慶生</button>
+                                            <button>告白</button>
+                                            <button>不指定</button>
+                                        </div>
+                                        <div class="option-list-item">
+                                            <p>配 送</p>
+                                            <button>專人配送</button>
+                                            <button>到店自取</button>
+                                        </div>
+                                        <div class="option-list-item">
+                                            <p>開始日</p>
+                                            <input type="week" name="" id="" min="2022-W30">
+                                        </div>
+                                    </div>
+                                    <div class="form-foot">
+                                        <p class="price">NT$2,200</p>
+                                        <div class="amount">
+                                            <span>－</span>
+                                            <input type="text" name="" id="" size="1">
+                                            <span>＋</span>
+                                        </div>
+                                        <button type="submit" id="submit" class="submit">加入購物車</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section class="txt">
+            <div class="wrap">
+                <div class="tab-list">
+                    <div class="item description">商品描述</div>
+                    <div class="item delivery">配送方式</div>
+                </div>
+                <div class="details">
+                    <div class="details-txt">
+                        <p>/ 每。週。選。花 /<br>
+                            <br>
+                            以花草感受生活，也可作為傳遞你心意的媒介。<br>
+                            挑選當季新鮮花材，每週傳送到你的手中。<br>
+                            <br>
+                            / 訂閱制服務描述/<br>
+                            <br>
+                            花材：<br>
+                            【經典】使用每週一於花市採購的新鮮花卉，依照季節變換更替花種；<br>
+                            【進階】花材數量、種類豐富度更高。<br>
+                            <br>
+                            配送：每週二 10:00 - 18:00 配送。<br>
+                            如需指定配送時間，會另外收取專車配送費，歡迎來訊洽詢。
+                        </p>
+                    </div>
+                    <div class="details-pic">
+                        <a href="">
+                            <img src="" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="wrap">
+                <div class="picContainer banner">
+                    <img src="pic/weekly-bouquet/banner.jpg" alt="">
+                </div>
+            </div>
+            
+        </section>
+    </content>
+    <footer>
+        <div class="container">      
+            <div class="main-footer">
+                <div class="link">
+                    <div class="logo">
+                        <a href="index.html" class="logo-link">
+                            <img class="logo" src="icon/Logo A.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="icon-list">
+                        <ul>
+                            <li><a href=""><img src="icon/facebook.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/instagram.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/line.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/mail.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info-txt">
+                        <h3>聯絡資訊</h3>
+                        <ul>
+                            <li>電話： 0912-345-678</li>
+                            <li>地址： 桃園市桃園區復興路1號</li>
+                            <li>信箱： blossoming.florist@gmail.com</li>
+                            <li>服務時間： 週一至週六 10:00 – 18:00</li>
+                        </ul>
+                    </div>
+                    <div class="contact-info-pic">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.9305472599526!2d121.31540364964494!3d24.990047816555563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681efa8b69e255%3A0x3c89fe39620994ca!2sNo.%201%2C%20Fuxing%20Rd%2C%20Taoyuan%20District%2C%20Taoyuan%20City%2C%20330!5e0!3m2!1sen!2stw!4v1658337321722!5m2!1sen!2stw" width="240" height="168" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <nav class="footer">
+                <ul>
+                    <li><a href="weekly-bouquet.html">週花訂閱</a></li>
+                    <li><a href="">常見問題</a></li>
+                    <li><a href="">花草照護</a></li>
+                    <li><a href="">場地佈置</a></li>
+                    <li><a href="">聯絡我們</a></li>
+                    <li><a href="">關於花開</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>Copyright © Blossoming 2022. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

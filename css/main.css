@@ -1,0 +1,160 @@
+/* --------------------------------------NAV start----------- */
+nav.main-nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.9);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+}
+.main-nav-container{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    box-sizing: border-box;
+}
+img.logo {
+    max-width: 200px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+a.logo-link:active{
+    transform: scale(0.9,0.9);
+}
+/* ---主選單main menu---------- */
+.main-menu-list{
+    display: flex;
+}
+li.main-menu-list-item a{
+    font-size: 16px;
+    vertical-align: top;
+    display: flex;
+    align-items: center;    
+    padding: 10px 16px 14px 16px ;
+    margin: 16px 0px 0px 0px;
+    border-bottom: 4px solid rgba(245, 245, 245, 0.9);
+}
+li.main-menu-list-item a:hover{
+    color:  rgba(228, 109, 109, 0.66);
+    font-weight: 600;
+    border-bottom: 4px solid rgba(228, 109, 109, 0.66);
+}
+li.main-menu-list-item a:active{
+    transform: scale(0.9, 0.9);
+    border-bottom: none;
+}
+
+/* ---主選單 分頁主題---------- */
+
+/* li.main-menu-list-item:nth-child(4) a{
+    color: rgba(178, 130, 104, 1);
+    font-weight: 700;    
+    border-bottom: 4px solid rgba(178, 130, 104, 1);
+} */
+/* ---次選單action menu---------- */
+.action-menu{
+    display: flex;
+}
+a.action-menu{
+    padding: 0 4px;
+    width: 20px;
+}
+a.action-menu:active{
+    transform: scale(0.9,0.9);
+}
+img.icon{
+    vertical-align: top;
+    width: 100%;
+}
+/* --------------------------------------NAV end---------------- */
+
+/* --------------------------------------FOOTER start----------- */
+footer{
+    width: 100%;
+    background: rgba(241, 237, 230, 0.76);
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.main-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px auto;
+    padding: 80px 0 40px 0;
+}
+/* ---logo&icon------------------- */
+.link a.logo-link{
+    display: block;
+    margin: 20px 0;
+}
+.icon-list ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.icon-list li{
+    padding: 20px 10px;
+}
+.icon-list a{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.icon-list img{
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}
+/* ---contact-info------------------- */
+.contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info-pic{
+    width: 240px;
+    height: 168px;
+    margin-left: 50px;
+}
+
+.contact-info-txt{
+    margin-right: 44px;
+    line-height: 180%;
+    font-size: 16px;
+    color: rgba(82, 79, 79, 1);
+}
+.contact-info-txt h3{
+    font-weight: 600;
+    padding: 10px 0;
+}
+/* ---nav---------------------------- */
+nav.footer{
+    border-top: 1px solid rgba(221, 227, 233, 1);
+    border-bottom: 1px solid rgba(221, 227, 233, 1);
+    padding-left: 80px;
+}
+/* nav.footer  */
+nav.footer li{ 
+    display: inline-block;
+    /* background-color: #fa0; */
+    padding: 16px;
+}
+/* ---copyright----------------------- */
+.copyright{
+    color: rgba(82, 79, 79, 0.8);;
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+/* --------------------------------------FOOTER end----------- */
+
