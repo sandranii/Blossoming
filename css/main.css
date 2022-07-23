@@ -37,7 +37,7 @@ li.main-menu-list-item a{
     vertical-align: top;
     display: flex;
     align-items: center;    
-    padding: 10px 16px 14px 16px ;
+    padding: 10px 16px 14px 16px;
     margin: 16px 0px 0px 0px;
     border-bottom: 4px solid rgba(245, 245, 245, 0.9);
 }
@@ -50,7 +50,29 @@ li.main-menu-list-item a:active{
     transform: scale(0.9, 0.9);
     border-bottom: none;
 }
+/* ------hover下拉選單--------- */
+li.main-menu-list-item.dropdown{
+    position: relative;
+}
+li.main-menu-list-item.dropdown ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 116px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.85);
+}
 
+li.dropdown_nav_item a{
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 18px 10px 14px 10px;
+    border-bottom: 4px solid rgba(245, 245, 245, 0.9);
+}
+li.main-menu-list-item.dropdown:hover > ul {
+    display: block;
+}
 /* ---主選單 分頁主題---------- */
 
 /* li.main-menu-list-item:nth-child(4) a{
