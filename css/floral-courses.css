@@ -1,0 +1,148 @@
+section{
+    width: 100%;
+}
+body{
+    color: var(--text);
+}
+/* ---主選單 分頁主題---------- */
+
+li.main-menu-list-item:nth-child(6) a.main-menu-list-item-label{
+    color: rgba(178, 130, 104, 1);
+    font-weight: 700;    
+    border-bottom: 4px solid rgba(178, 130, 104, 1);
+}
+/* ------------title------ */
+section.title{
+    margin-top: 60px;
+}
+section.title .wrap{
+    position: relative;
+}
+section.title .wrap .title-txt{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    color: #fff;
+    font-size: 32px;
+    line-height: 150%;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.47);
+    margin: auto;
+    text-align: center;
+}
+.wrap{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+}
+.picContainer.banner{
+    max-width: 1200px;
+    height: 580px;
+}
+.picContainer{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.picContainer img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center center;
+    vertical-align: top;
+}
+/* -------------------------------yt-------- */
+.yt-area{
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+.ytContainer.row{
+    /* width: 1200px; */
+    width: 100%;
+    background-color: var(--rice);
+    margin-bottom: 30px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+@media screen and (min-width:768px) {
+    .yt-area{
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .ytContainer.row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .col{
+        width: calc(100% / 2 - 80px);
+    }
+    .ytContainer.row:nth-child(2) .col:nth-child(1){
+        order: 1;
+    }   
+}
+.col{
+    box-sizing: border-box;
+}
+.ytContainer.row:first-child{
+    border-radius: 80px 0 0 0;
+}
+.ytContainer.row:last-child{
+    border-radius: 0 0 80px 0;
+}
+/* -----video------------------------- */
+.yt{
+    width: 100%;
+    aspect-ratio: 560/315;
+}
+.yt iframe{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+/* -----description------------------------- */
+.description{
+    display: flex;
+    flex-direction: column;
+}
+.description h3{
+    padding: 20px 0;
+    font-size: 22px;
+    color: var(--main-color);
+    text-shadow: 2px 2px 1px #e6e6e6;
+}
+.description h4{
+    font-size: 16px;
+    line-height: 150%;
+    color: #885c5c;
+}
+.description p{
+    font-size: 14px;
+    line-height: 200%;
+    padding: 20px 14px 10px 14px;
+    flex-shrink: 1;
+}
+button{
+    font-size: 14px;
+    line-height: 180%;
+    color: var(--main-color);
+    background-color: #FFFFFF;
+    border: 1px solid var(--main-color);
+    padding: 5px;
+    width: 100px;
+    align-self: flex-end;
+    margin-right: 14px;
+}
+button:hover{
+    color: #FFFFFF;
+    background-color: var(--main-color);
+}
+button:active{
+    transform: scale(0.9,0.9);
+}

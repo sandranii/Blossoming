@@ -1,3 +1,24 @@
+*{
+    /* font-family: "Nanum Myeongjo", "Noto Serif TC", "Noto Serif SC", "Athiti", "Ubuntu", "PingFang TC", "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", "Hiragino Sans GB", "Helvetica", "Roboto", "Arial", sans-serif; */
+    font-family:"Nanum Myeongjo", 'Noto Serif CJK TC',"Noto Serif TC", "Noto Serif SC", 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'STHeiti', 'WenQuanYi Micro Hei', 'SimSun', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(100, 100, 100, 0.8);
+}
+body{
+    --main-color: #D08B66;
+    --second-color: #D89B7B;
+    --brown: rgba(132, 82, 55, 0.83);
+    --title: rgba(82, 79, 79, 0.83);
+    --text: rgba(100, 100, 100, 0.8);
+    --rice: rgba(241, 229, 210, 0.95);
+    --rice-n-grey: rgba(226, 216, 201, 0.95);
+}
+
 /* --------------------------------------NAV start----------- */
 nav.main-nav-bar{
     position: fixed;
