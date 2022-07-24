@@ -1,0 +1,89 @@
+/* ---主選單 分頁主題---------- */
+
+li.main-menu-list-item:nth-child(4) a{
+    color: rgba(178, 130, 104, 1);
+    font-weight: 700;    
+    border-bottom: 4px solid rgba(178, 130, 104, 1);
+}
+section.title{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    height: 300px;
+    background-image: url(../image/pic/products/fresh-bouquet/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 45%;
+    /* padding-bottom: ; */
+}
+section.title h2{
+    padding-top: 134px;
+    font-size: 32px;
+    line-height: 150%;
+    /* text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.47); */
+    text-align: center;
+}
+.col{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+.card{
+    border: 1px solid #ccc;
+}
+.picContainer{
+    background-color: #fa0;
+    position: relative;
+}
+/* ------hover 換圖----------------------- */
+.card{
+    position: relative;
+}
+.overlap2{
+    position: absolute;
+    top: 0;
+    /* -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out; */
+    transition: opacity 1s ease-in-out;
+}
+.overlap2:hover{
+    opacity: 0;
+}
+.card-txt{
+    display: block;
+    margin: bottom;
+    text-align: left;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    height: 80px;
+    padding-top: 10px;
+}
+/* ------RWD----------------------- */
+
+.picContainer img{
+    width: 100%;
+    vertical-align: bottom;
+}
+@media screen and (min-width: 768px){
+    .wrap{
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .col{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .col{
+        width: 33.333333%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .col{
+        width: 25%;
+    }
+}
+
