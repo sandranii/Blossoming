@@ -81,15 +81,6 @@ h2.title-CH{
     position: sticky;
     z-index: 1;
 }
-button.number{
-    font-size: 32px;
-    border: none;
-    background-color: var(--rice);
-    color: #D08B66;
-}
-button.number:active{
-    transform: scale(0.9,0.9);
-}
 /* ----圖片------------------------------------- */
 .pic-area{
     width: 100%;
@@ -260,15 +251,22 @@ h3.subtitle{
     display: flex;
     align-items: center;
 }
-.form-foot input{
-    padding: 10px 0px;
+button.number{
+    border: none;
+    background-color: transparent;
+    color: #D08B66;
+}
+button.number:active{
+    transform: scale(0.9,0.9);
+}
+.amount .fill-amount{
+    padding: 6px 0px;
     background-color: #fff;
     text-align: center;
     border: 1px solid #D08B66;
     font-size: 18px;
     color: #D08B66;
-    width: 70px;
-    border-radius: 4px;
+    width: 50px;
 }
 @keyframes hover-vibrate{
     0%{transform: scale(1,1);}

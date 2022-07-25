@@ -1,6 +1,5 @@
 *{
-    font-family: "Nanum Myeongjo", "Noto Serif TC", "Noto Serif SC", "Athiti", "Ubuntu", "PingFang TC", "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", "Hiragino Sans GB", "Helvetica", "Roboto", "Arial", sans-serif;
-    /* font-family:"Nanum Myeongjo", 'Noto Serif CJK TC',"Noto Serif TC", "Noto Serif SC", 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'STHeiti', 'WenQuanYi Micro Hei', 'SimSun', sans-serif; */
+    font-family: 'Noto Serif TC', serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -17,6 +16,9 @@ body{
 a{
     text-decoration: none;
     color: var(--text);
+    font-family: 'Noto Serif TC', serif;
+    font-style: normal;
+    font-weight: 400;
 }
 /* --------------------------------------NAV start----------- */
 
@@ -92,12 +94,6 @@ li.dropdown_nav_item a{
 li.main-menu-list-item.dropdown:hover > ul {
     display: block;
 }
-/* ---主選單 分頁主題---------- */
-/* li.main-menu-list-item:nth-child(4) a{
-    color: rgba(178, 130, 104, 1);
-    font-weight: 700;    
-    border-bottom: 4px solid rgba(178, 130, 104, 1);
-} */
 /* ---次選單action menu---------- */
 .action-menu{
     display: flex;
@@ -120,6 +116,9 @@ footer{
     width: 100%;
     background: rgba(241, 237, 230, 0.76);
     margin: 0 auto;
+    font-family: 'Noto Serif TC', serif;
+    font-style: normal;
+    font-weight: 400;
 }
 .container{
     width: 100%;

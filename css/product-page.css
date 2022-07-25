@@ -4,16 +4,9 @@ section{
 section.top{
     margin-top: 60px;
 }
-body{
-    background-image: url(../image/pic/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .wrap-main{
     max-width: 1200px;
     margin: auto;
-    /* background-color: var(--rice); */
-    
 }
 .product-content{
     margin-top: 60px;
@@ -21,7 +14,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 /* -----picture---------------------- */
 .pic-area{
     width: 50%;
@@ -76,7 +68,6 @@ body{
     padding: 10px 0 20px 6px;
     line-height: 150%; 
 }
-
 .price-n-amount{
     display: flex;
     justify-content: space-around;
@@ -95,7 +86,6 @@ body{
     width: 50px;
 }
 button.number{
-    font-size: 32px;
     border: none;
     background-color: transparent;
     color: #D08B66;

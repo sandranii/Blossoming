@@ -142,7 +142,7 @@ p.weekly-price{
     text-shadow: 2px 2px 2px #E6E6E6;
     padding-left: 22px;
 }
-button.add-to-cart{
+button.more{
     font-size: 18px;
     line-height: 180%;
     color: #FFFFFF;
@@ -151,11 +151,11 @@ button.add-to-cart{
     border: 1px solid #D08B66;
     padding: 5px 15px;
 }
-button.add-to-cart:hover{
+button.more:hover{
     color: #D08B66;
     background-color: #FFFFFF;
 }
-button.add-to-cart:active{
+button.more:active{
     transform: scale(0.9,0.9);
 }
 /* ----------------------產品總覽---------- */
@@ -238,13 +238,27 @@ img.products-card-pic:hover{
 }
 button.customization{
     margin: 0 10px;
-    padding: 5px 15px;
-    font-size: 18px;
-    line-height: 180%;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #D08B66;
+}
+button.customization:hover > a{
     color: #FFFFFF;
     background-color: #D08B66;
-    border-radius: 4px;
-    border: none;
+}
+button.customization:hover{
+    color: #FFFFFF;
+    background-color: #D08B66;
+}
+button.customization:active{
+    transform: scale(0.9,0.9);
+}
+a.customization-link{
+    color: #D08B66;
+    display: block;    
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 180%;
 }
 /* ----花藝課程title------------------- */
 .title.courses{

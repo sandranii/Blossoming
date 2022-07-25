@@ -13,16 +13,18 @@ li.main-menu-list-item:nth-child(1) a{
 section.title{
     margin-top: 60px;
     margin-bottom: 80px;
-    background-image: url(../image/pic/products/fresh-bouquet/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 55%;
+
 }
 .title-txt{
     display: flex;
     align-items: center;
     height: 500px;
     justify-content: center;
+    background-image: url(../image/pic/products/fresh-bouquet/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 55%;
+    width: 100%;
 }
 .title-txt h2{
     font-size: 32px;
@@ -45,7 +47,6 @@ section.title{
 .picContainer{
     width: 100%;
     overflow: hidden;
-    /* height: 400px; */
 }
 .picContainer img{
     object-fit: cover;
@@ -63,7 +64,6 @@ section.title{
     color: #FFFFFF;
     padding: 5px 10px 5px 5px;
     font-size: 14px;
-    /* height: 24px; */
     box-sizing: border-box;
 }
 .tag::before{
@@ -123,7 +123,6 @@ section.title{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 .btn button{
     font-size: 14px;
@@ -141,9 +140,7 @@ section.title{
 .btn button:active{
     transform: scale(0.9,0.9);
 }
-
 .btn-2 button{
     display: block;
     width: 100%;
-
 }
