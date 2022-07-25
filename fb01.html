@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新鮮花束</title>
+    <title>新鮮花束系列</title>
     <link rel="icon" type="image/x-icon" href="./image/favicon/favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/product-page.css">
     <link rel="stylesheet" href="css/products-frest-bouquet.css">
+    <script src="javascript/weekly-bouquet.js"></script>
+
 </head>
 <body>
     <header>
@@ -61,30 +64,104 @@
         </nav>
     </header>
     <content>
-        <section class="title">
-            <div class="title-txt">
-                <h2>新鮮花束<br>Fresh Bouquet</h2>
-            </div>
-        </section>
-        <section>
-            <div class="wrap">
-                <div class="col">
-                    <a href="fb01.html" class="product-link">
-                        <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/01-1.jpg">                    
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/01-2.jpg">
-                            </div>
-                            <div class="tag">七夕限定</div>
-                            <div class="card-txt">
-                                <p>青春的詩</p>
-                                <p>NT $980</p>
-                            </div>
+        <section class="top">
+            <div class="wrap-main">
+                <div class="product-content">
+                    <div class="pic-area">
+                        <div class="group-small">
+                            <div class="picContainer small"><img class="small" src="image/pic/products/fresh-bouquet/01-2.jpg" alt=""></div>
+                            <div class="picContainer small"><img class="small" src="image/pic/products/fresh-bouquet/01-1.jpg" alt=""></div>
+                            <div class="picContainer small"><img class="small" src="image/pic/products/fresh-bouquet/03-1.jpg" alt=""></div>
+                        </div>                        <div class="picContainer large">
+                            <img id="large" src="image/pic/products/fresh-bouquet/01-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="content-txt">
+                        <div class="breadcrumb">
+                            <div class="block-inner">
+                                <a class="Label" href="products-fresh-bouquet.html">全部商品</a><span>></span>
+                                <a class="Label" href="products-fresh-bouquet.html">新鮮花束</a>
+                            </div>          
+                        </div>
+                        <div class="description">
+                            <h2>青春的詩</h2>
+                            <p class="material">花材：順風白桔梗、玫瑰流沙Quick Sand、狗尾草、地榆 、皇帝菊</p>
+                            <p>白就如同它的表象<br>
+                                潔淨、找不到一點點污穢與瑕疵<br><br>
+                                我對你的喜愛又何嘗不是如此<br>
+                                你就住在我心裡頭最潔淨的那塊區域<br><br>
+                                於是我將我的希望以這束花交到你手裡<br>
+                                即使一切都尚在我的想像之中<br>
+                                我將耐心等待你願意將這段關係開啟
+                            </p>
+                            <div class="price-n-amount">
+                                <div class="price">NT $980</div>
+                                <div class="amount">
+                                    <button type="button" class="number">－</button>
+                                    <input type="text" class="fill-amount">
+                                    <button type="button" class="number">＋</button>
+                                </div>
+                            </div>    
                             <div class="btn">
                                 <button class="add-to-cart">加入購物車</button>
                                 <button class="buy">直接購買</button>
+                            </div>   
+                        </div>
+                    </div>            
+                </div>
+                <div class="wrap-product-details">
+                    <div class="tab-list">
+                        <div class="item details-description"><a href="">商品描述</a></div>
+                        <div class="item delivery"><a href="">配送方式</a></div>
+                    </div>
+                    <div class="details">
+                        <div class="details-txt">
+                            <p>【商品規格】<br><br>
+                                色系：<br>
+                                草莓牛奶色<br>
+                                尺寸：<br>
+                                花束自取尺寸：50(高)x40(寬)cm<br>
+                                花束宅配尺寸：40(高)x35(寬)cm<br><br>
+                                【商品敘述】<br><br>
+                                白就如同它的表象<br>
+                                潔淨、找不到一點點污穢與瑕疵<br><br>
+                                我對你的喜愛又何嘗不是如此<br>
+                                你就住在我心裡頭最潔淨的那塊區域<br><br>
+                                於是我將我的希望以這束花交到你手裡<br>
+                                即使一切都尚在我的想像之中<br>
+                                我將耐心等待你願意將這段關係開啟<br><br>
+                                【注意事項】<br><br>
+                                - 此為鮮花花束<br>
+                                - 如遇商品內容之花況不佳，會由花藝師找尋其他相同等級之鮮花替代。<br>
+                                - 鮮花皆為自然生長，並不是機器製作，不可能會長得一模一樣，完美主義者請勿下單。<br>
+                                - 鮮花會依照存放環境而有所變化，可依照鮮花養護小卡給予合適環境。<br>
+                                - 如需寫字小卡請於下單時加購並在訂單備註欄填寫文字 (限30字內)<br>
+                                - 花禮一經販售恕不退換貨<br>
+                                - 購買前請務必詳細閱讀相關規則與說明，訂購即表示同意。<br>
+                                - 如對花禮有任何疑問請直接私訊，或來電 0912-345-678<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="title">
+                <h3 class="related-products">相關商品</h3>
+            </div>
+            <div class="wrap">
+                <div class="col">
+                    <a href="" class="product-link">
+                        <div class="card">
+                            <div class="picContainer overlap-bottom">
+                                <img src="image/pic/products/fresh-bouquet/05-1.jpg">
+                            </div>
+                            <div class="picContainer overlap-top">
+                                <img src="image/pic/products/fresh-bouquet/05-2.jpg">
+                            </div>
+                            <div class="card-txt">
+                                <p>橘子汽水</p>
+                                <p>NT $980</p>
                             </div>
                         </div>
                     </a>
@@ -103,10 +180,6 @@
                                 <p>夏日戀曲</p>
                                 <p>NT $980</p>
                             </div>
-                            <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
-                                <button class="buy">直接購買</button>
-                            </div>   
                         </div>
                     </a>
                 </div>
@@ -124,10 +197,6 @@
                                 <p>春之記號</p>
                                 <p>NT $980</p>
                             </div>
-                            <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
-                                <button class="buy">直接購買</button>
-                            </div>   
                         </div>
                     </a>  
                 </div>
@@ -144,136 +213,13 @@
                                 <p>粉色秘密</p>
                                 <p>NT $980</p>
                             </div>
-                            <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
-                                <button class="buy">直接購買</button>
-                            </div>   
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
-                        <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/05-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/05-2.jpg">
-                            </div>
-                            <div class="card-txt">
-                                <p>橘子汽水</p>
-                                <p>NT $980</p>
-                            </div>
-                            <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
-                                <button class="buy">直接購買</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
-                        <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/06-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/06-2.jpg">
-                            </div>
-                            <div class="card-txt">
-                                <p>藍色的你</p>
-                                <p>NT $980</p>
-                            </div>
-                            <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
-                                <button class="buy">直接購買</button>
-                            </div>   
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
-                        <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/07-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/07-2.jpg">
-                            </div>
-                            <div class="card-txt">
-                                <p>十四行詩</p>
-                                <p>NT $980</p>
-                            </div>
-                            <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
-                                <button class="buy">直接購買</button>
-                            </div>   
-                        </div>
-                    </a>    
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
-                        <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/08-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/08-2.jpg">
-                            </div>
-                            <div class="card-txt">
-                                <p>湖畔夕陽</p>
-                                <p>NT $980</p>
-                            </div>
-                            <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
-                                <button class="buy">直接購買</button>
-                            </div>   
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
-                        <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/09-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/09-2.jpg">
-                            </div>
-                            <div class="card-txt">
-                                <p>晴日花火</p>
-                                <p>NT $980</p>
-                            </div>
-                            <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
-                                <button class="buy">直接購買</button>
-                            </div>   
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
-                        <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/10-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/10-2.jpg">
-                            </div>
-                            <div class="card-txt">
-                                <p>盛夏情詩</p>
-                                <p>NT $980</p>
-                            </div>
-                            <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
-                                <button class="buy">直接購買</button>
-                            </div>   
                         </div>
                     </a>
                 </div>
             </div>
         </section>
-    </content> 
+        
+    </content>
     <footer>
         <div class="container">      
             <div class="main-footer">

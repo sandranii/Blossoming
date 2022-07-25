@@ -81,8 +81,14 @@ h2.title-CH{
     position: sticky;
     z-index: 1;
 }
-span{
+button.number{
     font-size: 32px;
+    border: none;
+    background-color: var(--rice);
+    color: #D08B66;
+}
+button.number:active{
+    transform: scale(0.9,0.9);
 }
 /* ----圖片------------------------------------- */
 .pic-area{
@@ -110,21 +116,19 @@ span{
     object-position: center center;
     vertical-align: top;
 }
-p.nametag{
+.nametag{
     position: absolute;
     left: 0;
-    bottom: 26px;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 74px;
-    height: 46px;
+    padding: 5px 10px;
     background-color: #F5F5F5;
-    border-radius: 0px 4px 4px 0px;
-    font-size: 28px;
+    border-radius: 0px 4px 0px 0px;
+    font-size: 18px;
     line-height: 35px;
     color: #C5977E;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 .group-small{
     margin-bottom: 20px;
@@ -294,14 +298,14 @@ button.submit:active{
 }
 /* ------------------商品描述---------- */
 section.txt{
-    background-image: url(../pic/weekly-bouquet/bg.jpg);
+    background-image: url(../image/pic/weekly-bouquet/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -80px;
 }
 section.txt .wrap{
     font-size: 20px;    
-    padding: 220px 80px 200px 80px;
+    padding: 220px 80px 80px 80px;
     box-sizing: border-box;
 }
 .tab-list{
@@ -334,6 +338,10 @@ section.txt .wrap{
     background-image: url(../pic/weekly-bouquet/banner-bg.jpg);
     width: 100%;
 } */
+.banner{
+    max-width: 1200px;
+    margin: auto;
+}
 .picContainer.banner{
     height: 300px;
     width: 100%;

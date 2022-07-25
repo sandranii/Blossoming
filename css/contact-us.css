@@ -4,6 +4,12 @@ section{
 body{
     color: #666666;
 }
+/* ---主選單 分頁主題---------- */
+li.main-menu-list-item:nth-child(7) a{
+    color: rgba(178, 130, 104, 1);
+    font-weight: 700;    
+    border-bottom: 4px solid rgba(178, 130, 104, 1);
+}
 /* ------------title------ */
 section.title{
     margin-top: 60px;
@@ -39,8 +45,7 @@ section.title .wrap .title-txt{
     overflow: hidden;
 }
 .picContainer.item:first-child{
-    border-radius: 80px 0 0 0;
-    background-color: #000;
+    border-radius: 0;
 }
 .picContainer.item{
     border-radius:  0 80px 0 0;
@@ -57,7 +62,6 @@ section.title .wrap .title-txt{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    /* background-color: #ccc; */
 }
 .item{
     height: 540px;
@@ -67,7 +71,7 @@ section.title .wrap .title-txt{
     background-color: var(--rice);
 }
 .info{
-    margin: 80px 60px;
+    margin: 80px 60px 0 60px;
     line-height: 250%;
     font-size: 16px;
 }
@@ -93,7 +97,7 @@ section.title .wrap .title-txt{
 .picContainer.bottom{
     width: 300px;
     height: 300px;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 
