@@ -1,26 +1,35 @@
+section{
+    width: 100%;
+}
+body{
+    color: var(--text);
+}
 /* ---主選單 分頁主題---------- */
-
-li.main-menu-list-item:nth-child(4) a{
+li.main-menu-list-item:nth-child(1) a{
     color: rgba(178, 130, 104, 1);
     font-weight: 700;    
     border-bottom: 4px solid rgba(178, 130, 104, 1);
 }
 section.title{
     margin-top: 60px;
-    margin-bottom: 100px;
-    height: 300px;
+    margin-bottom: 80px;
     background-image: url(../image/pic/products/fresh-bouquet/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 45%;
-    /* padding-bottom: ; */
+    background-position: 0 55%;
 }
-section.title h2{
-    padding-top: 134px;
+.title-txt{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+}
+.title-txt h2{
     font-size: 32px;
     line-height: 150%;
-    /* text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.47); */
     text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.36);
 }
 .col{
     padding-left: 15px;
@@ -28,43 +37,57 @@ section.title h2{
     margin-bottom: 15px;
     box-sizing: border-box;
 }
+/* ------card------------------------ */
 .card{
-    border: 1px solid #ccc;
+    position: relative;
+    margin-bottom: 20px;
 }
 .picContainer{
-    background-color: #fa0;
-    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* height: 400px; */
 }
-/* ------hover 換圖----------------------- */
-.card{
-    position: relative;
+.picContainer img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center center;
+    vertical-align: top;
 }
-.overlap2{
+/* ------tag------------------ */
+.tag{
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    background-color: rgba(255, 124, 124, 0.8);
+    color: #FFFFFF;
+    padding: 5px 10px 5px 5px;
+    font-size: 14px;
+    /* height: 24px; */
+    box-sizing: border-box;
+}
+.tag::before{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 12px solid rgba(255, 124, 124, 0.8);
+    border-bottom: 12px solid transparent;
+    border-top: 12px solid transparent;
     position: absolute;
     top: 0;
-    /* -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out; */
+    right: 100%;
+}
+/* ------hover 換圖----------------------- */
+.overlap-top{
+    position: absolute;
+    top: 0;
     transition: opacity 1s ease-in-out;
 }
-.overlap2:hover{
+.overlap-top:hover{
     opacity: 0;
 }
-.card-txt{
-    display: block;
-    margin: bottom;
-    text-align: left;
-    letter-spacing: 0.5px;
-    font-weight: 500;
-    height: 80px;
-    padding-top: 10px;
-}
 /* ------RWD----------------------- */
-
-.picContainer img{
-    width: 100%;
-    vertical-align: bottom;
-}
 @media screen and (min-width: 768px){
     .wrap{
         max-width: 1200px;
@@ -86,4 +109,41 @@ section.title h2{
         width: 25%;
     }
 }
+/* ----card-txt-----------------------
+*/
+.card-txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.btn button{
+    font-size: 14px;
+    color: #D08B66;
+    background-color: #FFFFFF;
+    border: 1px solid #D08B66;
+    width: 50%;
+    margin: 1px;
+    padding: 3px 0;
+}
+.btn button:hover{
+    color: #FFFFFF;
+    background-color: var(--main-color);
+}
+.btn button:active{
+    transform: scale(0.9,0.9);
+}
 
+.btn-2 button{
+    display: block;
+    width: 100%;
+
+}

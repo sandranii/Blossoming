@@ -20,13 +20,13 @@ section.title .wrap{
 }
 section.title .wrap .title-txt{
     position: absolute;
-    top: 40%;
-    left: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     color: #fff;
     font-size: 32px;
     line-height: 150%;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.47);
-    margin: auto;
     text-align: center;
 }
 .wrap{

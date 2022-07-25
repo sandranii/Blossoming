@@ -1,13 +1,8 @@
 *{
-    /* font-family: "Nanum Myeongjo", "Noto Serif TC", "Noto Serif SC", "Athiti", "Ubuntu", "PingFang TC", "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", "Hiragino Sans GB", "Helvetica", "Roboto", "Arial", sans-serif; */
-    font-family:"Nanum Myeongjo", 'Noto Serif CJK TC',"Noto Serif TC", "Noto Serif SC", 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'STHeiti', 'WenQuanYi Micro Hei', 'SimSun', sans-serif;
+    font-family: "Nanum Myeongjo", "Noto Serif TC", "Noto Serif SC", "Athiti", "Ubuntu", "PingFang TC", "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", "Hiragino Sans GB", "Helvetica", "Roboto", "Arial", sans-serif;
+    /* font-family:"Nanum Myeongjo", 'Noto Serif CJK TC',"Noto Serif TC", "Noto Serif SC", 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'STHeiti', 'WenQuanYi Micro Hei', 'SimSun', sans-serif; */
     font-style: normal;
     font-weight: 400;
-}
-
-a{
-    text-decoration: none;
-    color: rgba(100, 100, 100, 0.8);
 }
 body{
     --main-color: #D08B66;
@@ -17,9 +12,20 @@ body{
     --text: rgba(100, 100, 100, 0.8);
     --rice: rgba(241, 229, 210, 0.95);
     --rice-n-grey: rgba(226, 216, 201, 0.95);
+    --grey: #968C83;
+}
+a{
+    text-decoration: none;
+    color: var(--text);
+}
+/* --------------------------------------NAV start----------- */
+.expand{
+    display: block;
+    width: 16px;
+    height: 16px;   
+    /* height: 100%;  */
 }
 
-/* --------------------------------------NAV start----------- */
 nav.main-nav-bar{
     position: fixed;
     top: 0;
@@ -63,9 +69,8 @@ li.main-menu-list-item a{
     border-bottom: 4px solid rgba(245, 245, 245, 0.9);
 }
 li.main-menu-list-item a:hover{
-    color:  rgba(228, 109, 109, 0.66);
-    font-weight: 600;
-    border-bottom: 4px solid rgba(228, 109, 109, 0.66);
+    color: var(--second-color);
+    border-bottom: 4px solid var(--second-color);
 }
 li.main-menu-list-item a:active{
     transform: scale(0.9, 0.9);
@@ -83,7 +88,6 @@ li.main-menu-list-item.dropdown ul{
     border: 1px solid rgba(0, 0, 0, 0.15);
     background-color: rgba(255, 255, 255, 0.85);
 }
-
 li.dropdown_nav_item a{
     display: block;
     text-align: center;
@@ -95,9 +99,9 @@ li.main-menu-list-item.dropdown:hover > ul {
     display: block;
 }
 /* ---主選單 分頁主題---------- */
-
 /* li.main-menu-list-item:nth-child(4) a{
     color: rgba(178, 130, 104, 1);
+    rgba(132, 82, 55, 0.83)
     font-weight: 700;    
     border-bottom: 4px solid rgba(178, 130, 104, 1);
 } */

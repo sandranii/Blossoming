@@ -13,13 +13,13 @@ section.title .wrap{
 }
 section.title .wrap .title-txt{
     position: absolute;
-    top: 40%;
-    left: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     color: #fff;
     font-size: 32px;
     line-height: 150%;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.47);
-    margin: auto;
     text-align: center;
 }
 .wrap{
@@ -61,16 +61,15 @@ section.title .wrap .title-txt{
 }
 .item{
     height: 540px;
-    width: calc(100% / 2);
+    width: 50%;
     margin: 30px 0;
     box-sizing: border-box;
-    background-color: var(--rice-n-grey);
+    background-color: var(--rice);
 }
 .info{
-    padding: 80px 60px;
+    margin: 80px 60px;
     line-height: 250%;
-    font-size: 18px;
-    background: var(--rice);
+    font-size: 16px;
 }
 .info h3{
     font-size: 22px;
@@ -85,16 +84,16 @@ section.title .wrap .title-txt{
     line-height: 150%;
     text-align: center;
     padding: 250px 0px;
+    background-color: var(--rice-n-grey);
 }
-
 /* ------------wrap bottom---------------------- */
 .wrap.bottom{
     display: flex;
-
 }
 .picContainer.bottom{
     width: 300px;
     height: 300px;
+    opacity: 0.8;
 }
 
 
