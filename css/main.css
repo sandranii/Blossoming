@@ -171,7 +171,7 @@ footer{
     margin-right: 44px;
     line-height: 180%;
     font-size: 16px;
-    color: rgba(82, 79, 79, 1);
+    color: var(--title);
 }
 .contact-info-txt h3{
     font-weight: 600;
