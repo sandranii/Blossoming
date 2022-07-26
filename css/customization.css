@@ -68,7 +68,6 @@ section.title .wrap .title-txt{
     width: 50%;
     margin: 30px 0;
     box-sizing: border-box;
-    background-color: var(--rice);
 }
 .info{
     margin: 80px 60px 0 60px;
@@ -90,6 +89,9 @@ section.title .wrap .title-txt{
     padding: 250px 0px;
     background-color: var(--rice-n-grey);
 }
+.item:nth-child(2){
+    background-color: var(--rice);
+}
 /* ------------wrap bottom---------------------- */
 .wrap.bottom{
     display: flex;
@@ -99,5 +101,3 @@ section.title .wrap .title-txt{
     height: 300px;
     opacity: 0.85;
 }
-
-
