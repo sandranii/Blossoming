@@ -8,15 +8,26 @@ section.top{
     max-width: 1200px;
     margin: auto;
 }
-.product-content{
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (min-width: 768px){
+    .product-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .pic-area{
+        width: 50%;
+    }
+    .content-txt{
+        width: 50%;
+    }
+
 }
+.content-txt{
+    margin-top: 20px;
+}
+
 /* -----picture---------------------- */
 .pic-area{
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -25,17 +36,23 @@ section.top{
     overflow: hidden;
 }
 .picContainer.large{
-    width: 400px;
-    height: 500px;
-    border-radius: 0 150px 0 0;
+    /* width: 400px; */
+    width: 100%;
+    /* height: 30%; */
+    /* height: 500px;s */
+    /* border-radius: 0 150px 0 0; */
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.37);
 }
-.picContainer.small{
-    width: 140px;
-    height: 160px;
-    opacity: 0.7;
+.group-small{
+    width: 33.333333%;
     margin-left: 5px;
     margin-right: 5px;
+}
+.picContainer.small{
+    max-width: 100%;
+    height: auto;
+    opacity: 0.7;
+
 }
 .picContainer.small:hover{
     opacity: 1;
@@ -45,7 +62,6 @@ section.top{
 }
 /* -----content---------------------- */
 .content-txt{
-    width: 50%;
     padding: 0 50px;
     margin-bottom: auto;
 }

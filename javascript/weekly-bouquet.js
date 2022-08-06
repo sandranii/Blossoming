@@ -8,5 +8,21 @@ function init(){
         }, false);
     }
 }
-
 window.addEventListener("load", init, false);
+
+function highlight(e){
+    let obj = e.target;
+    obj.style.backgroundColor = "pink";
+}
+// function normal(e){
+//     let obj = e.target;
+//     obj.style.backgroundColor = "rgba(255,255,255,0.62)";
+// }
+function abc(){
+    let btns = document.getElementsByTagName("button");
+    for(let i=0; i<btns.length; i++){
+        btns[i].onclick = highlight;
+        // btns[i].onclick = normal;
+    }
+}
+window.addEventListener("load", abc);

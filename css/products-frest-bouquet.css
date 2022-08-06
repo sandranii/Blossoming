@@ -38,6 +38,8 @@ section.title{
     padding-right: 15px;
     margin-bottom: 15px;
     box-sizing: border-box;
+    min-width: 400px;
+    margin: auto;
 }
 /* ------card------------------------ */
 .card{
