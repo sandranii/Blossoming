@@ -60,8 +60,9 @@ a.logo-link:active{
 li.main-menu-list-item a{
     display: block;
     padding: 20px 10px 16px 10px;
-    margin: 4px 0px 0px 0px;
-    border-bottom: 4px solid rgba(245, 245, 245, 0.9);
+    /* margin: 4px 0px 0px 0px; */
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
 }
 li.main-menu-list-item a:hover{
     color: var(--second-color);
@@ -224,7 +225,9 @@ nav.footer li{
         display: none;
         position: absolute;
         background-color: rgb(232, 230, 227);
+        /* background-color: #f00; */
         width: 100%;
+        /* height: 100%; */
         top: 100%;
         left: 0;
     }
@@ -268,7 +271,7 @@ nav.footer li{
     }
     .link{
         text-align: center;
-        width: 30%;
+        /* width: 30%; */
     }
     .contact-info{
         display: flex;
@@ -283,4 +286,64 @@ nav.footer li{
         display: inline-block;
     }
 }
+ /* index.html 首頁>瞭解更多 超連結 a.more, a.customization-link */
+ /* weekly-bouquet.html 按鈕 button.submit */
+ a.more, a.customization-link, button.submit{
+    font-size: 18px;
+    line-height: 180%;
+    color: #FFFFFF;
+    background-color: var(--main-color);
+    border-radius: 4px;
+    border: 1px solid var(--main-color);
+    padding: 5px 15px;
+}
+a.more:hover, a.customization-link:hover, button.submit:hover{
+    color: var(--main-color);
+    background-color: #FFFFFF;
+}
+a.more:active, a.customization-link:active,button.submit:active{
+    transform: scale(0.9,0.9);
+}
+@keyframes hover-vibrate{
+    0%{transform: scale(1,1);}
+    25%{transform: scale(.9,.9);}
+    50%{transform: scale(1,1);}
+    75%{transform: scale(.9,.9);}
+    100%{transform: scale(1,1);}
+}
+button.submit:hover{
+    animation: hover-vibrate 0.3s;
+}
+ /* 超連結另種顏色參考 */
+/* button.customization{
+    margin: 0 10px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #D08B66;
+}
+button.customization:hover > a{
+    color: #FFFFFF;
+    background-color: #D08B66;
+}
+button.customization:hover{
+    color: #FFFFFF;
+    background-color: #D08B66;
+}
+button.customization:active{
+    transform: scale(0.9,0.9);
+}
+a.customization-link{
+    color: #D08B66;
+    display: block;    
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 180%;
+} */
+
+/* fb01.html, weekly-bouquet.html +號-號 */
+button.number:hover{
+    cursor: pointer;
+}
+
+
 

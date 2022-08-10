@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>週花訂閱</title>
     <link rel="icon" type="image/x-icon" href="./image/favicon/favicon.ico">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/weekly-bouquet.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/weekly-bouquet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
-    <script src="javascript/weekly-bouquet.js"></script>
+    <script src="./javascript/jquery-3.6.0.min.js"></script>
+    <script src="./javascript/weekly-bouquet.js"></script>
 </head>
 <body>
     <header>
@@ -55,7 +56,7 @@
                 </div>
                 <!-- 功能導覽列 -->
                 <div class="action-menu">
-                    <a href="" class="action-menu cart">
+                    <a href="./cart.html" class="action-menu cart">
                         <img class="icon" src="./image/icon/shopping-cart.svg" alt="">
                     </a>
                     <a href="" class="action-menu login">
@@ -71,7 +72,7 @@
             </div>
         </nav>
     </header>
-    <content>
+    <main>
         <section>
             <div class="wrap main">
                 <div class="canvas-area">
@@ -79,7 +80,7 @@
                         <div class="bg"></div>
                         <div class="content">                  
                             <div class="title-n-pic">
-                                <h2 class="title-EN">/ Weekly<br>Bouquet</h2>
+                                
                                 <h2 class="title-CH">週花<span>訂閱</span></h2>
                                 <div class="pic-area">
                                   <div class="picContainer large">
@@ -100,58 +101,48 @@
                                 </div>
                             </div>
                             <div class="windows-n-form">
-                                <div class="windows">
-                                    <div class="picContainer windows">
-                                        <img src="./image/pic/weekly-bouquet/window1.jpg" alt="">
-                                    </div>
-                                    <div class="picContainer windows">
-                                        <img src="./image/pic/weekly-bouquet/window2.jpg" alt="">
-                                    </div>
-                                    <div class="windowFrame row"></div>
-                                    <div class="windowFrame col left"></div>
-                                    <div class="windowFrame col right"></div>
-                                </div>
-                                <div class="form">
+                                <h2 class="title-EN">Weekly Bouquet</h2>
+                                <form class="form" id="weeklyForm">
                                     <h3 class="subtitle">訂閱制服務｜生活週花</h3>
                                     <div class="option-list">
                                         <div class="option-list-item">
                                             <p>款 式</p>
-                                            <button>經典</button>
-                                            <button>進階</button>
+                                            <button type="button" class="btn" data-option="款式" data-value="經典">經典</button>
+                                            <button type="button" class="btn" data-option="款式" data-value="進階">進階</button>
                                         </div>
                                         <div class="option-list-item">
                                             <p>風 格</p>
-                                            <button>歐式繽紛</button>
-                                            <button>法式優雅</button>
-                                            <button>韓式清新</button>
+                                            <button type="button" class="btn" data-option="風格" data-value="歐式繽紛">歐式繽紛</button>
+                                            <button type="button" class="btn" data-option="風格" data-value="法式優雅">法式優雅</button>
+                                            <button type="button" class="btn" data-option="風格" data-value="韓式清新">韓式清新</button>
                                         </div>
                                         <div class="option-list-item">
                                             <p>主 題</p>
-                                            <button>七夕</button>
-                                            <button>慶生</button>
-                                            <button>告白</button>
-                                            <button>不指定</button>
+                                            <button type="button" class="btn" data-option="主題" data-value="七夕">七夕</button>
+                                            <button type="button" class="btn" data-option="主題" data-value="慶生">慶生</button>
+                                            <button type="button" class="btn" data-option="主題" data-value="告白">告白</button>
+                                            <button type="button" class="btn" data-option="主題" data-value="不指定">不指定</button>
                                         </div>
                                         <div class="option-list-item">
                                             <p>配 送</p>
-                                            <button>專人配送</button>
-                                            <button>到店自取</button>
+                                            <button type="button" class="btn" data-option="配送" data-value="專人配送">專人配送</button>
+                                            <button type="button" class="btn" data-option="配送" data-value="到店自取">到店自取</button>
                                         </div>
                                         <div class="option-list-item">
                                             <p>開始日</p>
-                                            <input type="week" name="" id="" min="2022-W30">
+                                            <input type="week" name="" id="startDate" min="2022-W33" data-option="開始日">
                                         </div>
                                     </div>
                                     <div class="form-foot">
                                         <p class="price">NT$2,200</p>
                                         <div class="amount">
-                                            <button type="button" class="number">－</button>
-                                            <input type="text" class="fill-amount">
-                                            <button type="button" class="number">＋</button>
+                                            <button type="button" class="number btnMinus">－</button>
+                                            <input type="text" class="fill-amount" min="1" value="1" data-option="數量">
+                                            <button type="button" class="number btnPlus">＋</button>
                                         </div>
-                                        <button type="submit" id="submit" class="submit">加入購物車</button>
+                                        <button type="button" id="submit" class="submit add-to-cart">加入購物車</button>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>    
                     </div>    
@@ -189,7 +180,7 @@
                 </div>
             </div>
         </section>
-    </content>
+    </main>
     <footer>
         <div class="container">      
             <div class="main-footer">

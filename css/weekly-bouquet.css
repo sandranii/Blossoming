@@ -138,7 +138,7 @@ h2.title-CH{
     width: 100%;
     margin-left: 80px;
 }
-.windows{
+/* .windows{
     display: flex;
     justify-content: center;
     position: relative;
@@ -183,7 +183,7 @@ h2.title-CH{
 .windowFrame.col.right{
     left: auto;
     right: 60px;
-}
+} */
 /* ----表單區---------------------- */
 .form{
     margin: auto;
@@ -215,7 +215,7 @@ h3.subtitle{
     margin-left: 3px;
     margin-right: 3px;
     padding: 6px 16px;
-    background-color: rgba(255, 255, 255, 0.62);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 7px;
     border: none;
     font-size: 18px;
@@ -228,11 +228,16 @@ h3.subtitle{
 .option-list-item input{
     margin-left: 2px;
     padding: 6px 18px;
-    background-color: rgba(255, 255, 255, 0.62);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 7px;
     border: none;
     font-size: 18px;
     color: rgba(193, 136, 105, 0.56);
+}
+/* 被選擇的選項 */
+button.chosen, input.chosen{
+    background-color: #FFFFFF;
+    color: rgba(193, 136, 105, 1);
 }
 .form-foot{
     display: flex;
@@ -267,32 +272,6 @@ button.number:active{
     font-size: 18px;
     color: #D08B66;
     width: 50px;
-}
-@keyframes hover-vibrate{
-    0%{transform: scale(1,1);}
-    25%{transform: scale(.9,.9);}
-    50%{transform: scale(1,1);}
-    75%{transform: scale(.9,.9);}
-    100%{transform: scale(1,1);}
-}
-button.submit{
-    width: 130px;
-    padding: 10px 16px;
-    box-sizing: border-box;
-    background-color: #D08B66;
-    border-radius: 4px;
-    border: 1px solid #D08B66;
-    font-size: 18px;
-    color: #FFFFFF;
-    transform: scale(1,1);
-}
-button.submit:hover{
-    animation: hover-vibrate 0.3s;
-    color: #D08B66;
-    background-color: #FFFFFF;
-}
-button.submit:active{
-    transform: scale(0.9,0.9);
 }
 /* ------------------商品描述---------- */
 section.txt{

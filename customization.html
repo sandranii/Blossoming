@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>客製商品</title>
     <link rel="icon" type="image/x-icon" href="./image/favicon/favicon.ico">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/customization.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/customization.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <script src="./javascript/slider.js"></script>
 </head>
 <body>
     <header>
@@ -70,7 +71,7 @@
             </div>
         </nav>
     </header>
-    <content>
+    <main>
         <section class="title">
             <div class="wrap">
                 <div class="picContainer banner">
@@ -101,23 +102,43 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="wrap bottom">
-                <div class="picContainer bottom">
-                    <img src="image/pic/contact/bottom1.jpg" alt="">
+        <section class="slider-pics">
+            <div class="view">
+                <input type="button" id="btnLeft" value="⟨" disabled>
+                <div class="slider">
+                    <div class="picContainer bottom">
+                        <img src="image/pic/contact/bottom1.jpg" alt="">
+                    </div>
+                    <div class="picContainer bottom">
+                        <img src="image/pic/contact/bottom2.jpg" alt="">
+                    </div>
+                    <div class="picContainer bottom">
+                        <img src="image/pic/contact/bottom3.webp" alt="">
+                    </div>
+                    <div class="picContainer bottom">
+                        <img src="image/pic/contact/bottom4.jpg" alt="">
+                    </div>
+                    <div class="picContainer bottom">
+                        <img src="image/pic/contact/bottom5.jpg" alt="">
+                    </div>
+                    <div class="picContainer bottom">
+                        <img src="image/pic/contact/bottom6.jpg" alt="">
+                    </div>
+                    <div class="picContainer bottom">
+                        <img src="image/pic/contact/bottom7.jpg" alt="">
+                    </div>
+                    <div class="picContainer bottom">
+                        <img src="image/pic/contact/bottom8.jpg" alt="">
+                    </div>
                 </div>
-                <div class="picContainer bottom">
-                    <img src="image/pic/contact/bottom2.jpg" alt="">
-                </div>
-                <div class="picContainer bottom">
-                    <img src="image/pic/contact/bottom3.webp" alt="">
-                </div>
-                <div class="picContainer bottom">
-                    <img src="image/pic/contact/bottom4.jpg" alt="">
-                </div>
-            </div>
+                <input type="button" id="btnRight" value="⟩">
+            </div>    
+            <!-- <div class="shiftPanel" id="shiftPanel">
+                <input type="button" id="btnLeft" value="❮" disabled>
+                <input type="button" id="btnRight" value="❯">
+            </div> -->
         </section>
-    </content>
+    </main>
     <footer>
         <div class="container">      
             <div class="main-footer">
