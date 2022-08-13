@@ -122,21 +122,21 @@ footer{
     margin: auto;
 }
 .main-footer{
-    padding: 60px 40px 40px 80px;
+    padding: 50px;
 }
 /* ---logo&icon------------------- */
 .link{
-    width: 30%;
+    /* width: 30%; */
+    /* text-align: left; */
 }
 .link a.logo-link{
-    display: block;
-    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
 }
 .icon-list ul{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 60%;
+    justify-content: flex-start;
     margin: auto;
 }
 .icon-list li{
@@ -156,23 +156,27 @@ footer{
 .contact-info{
     margin-top: 25px;
 }
-.contact-info-pic{
-    margin-top: 25px;
+.contact-info-map iframe{
+    width: 100%;
+    margin: auto;
 }
 .contact-info-txt{
-    margin-right: 44px;
     line-height: 180%;
     color: var(--title);
+    padding: 10px;
 }
 .contact-info-txt h3{
     font-weight: 600;
-    padding: 10px 0;
+}
+.contact-info-txt ul{
+    font-size: 14px;
+    padding: 20px 0;
 }
 /* ---nav---------------------------- */
 nav.footer{
     border-top: 1px solid rgba(221, 227, 233, 1);
     border-bottom: 1px solid rgba(221, 227, 233, 1);
-    padding-left: 80px;
+    padding-left: 50px;
 }
 /* nav.footer  */
 nav.footer li{ 
@@ -180,9 +184,10 @@ nav.footer li{
 }
 /* ---copyright----------------------- */
 .copyright{
-    color: rgba(82, 79, 79, 0.8);;
+    font-size: 12px;
+    color: rgba(82, 79, 79, 0.8);
     text-align: center;
-    padding: 20px 0 40px 0;
+    padding: 40px 40px 60px 40px;
 }
 /* --------------------------------------FOOTER end----------- */
 /* ---RWD----------- */
@@ -273,6 +278,9 @@ nav.footer li{
         text-align: center;
         /* width: 30%; */
     }
+    .icon-list ul{
+        justify-content: space-evenly;
+    }
     .contact-info{
         display: flex;
         justify-content: center;
@@ -282,8 +290,17 @@ nav.footer li{
     .contact-info-pic{
         margin-top: 0;
     }
-    nav.footer li{ 
-        display: inline-block;
+    .contact-info-txt{
+        margin-right: 44px;
+    }
+    nav.footer{
+        padding-left: 80px;
+    }
+    nav.footer ul{ 
+        display: flex;
+    }
+    .copyright{
+        padding: 20px 0 40px 0;
     }
 }
  /* index.html 首頁>瞭解更多 超連結 a.more, a.customization-link */

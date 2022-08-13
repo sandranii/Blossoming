@@ -1,0 +1,51 @@
+.swiper {
+  width: 1200px;
+  height: 600px;
+}
+.swiper-wrapper.slider-course{
+    width: 1200px;
+    height: 600px;
+    border: 1px solid red; 
+    display: flex;
+    justify-content: center;
+  }
+  .slider-course li.swiper-slide{
+    width: 400px;
+    outline:1px solid blue;
+    margin: 0px -3%;
+    border-radius: 200px 200px 0 0 ;
+    overflow: hidden;
+  }
+  .slider-course .active{
+    z-index: 1;
+  }
+  .slider-course li:nth-child(1),
+  .slider-course li:nth-child(3){
+    transform: scale(.8);
+  }
+  .products-card.course{
+    width: 100%;
+  }
+  .products-card-pic{
+    width: 100%;
+    overflow: hidden;
+  }
+  .products-card-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+
+ /*go-to-top*/
+
+button{
+  display: none;
+  width: 500px;
+  height: 200px;
+  margin-right: 0;
+}
+
+
+
