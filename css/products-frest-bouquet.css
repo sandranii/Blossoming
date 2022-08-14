@@ -27,24 +27,20 @@ section.title{
     width: 100%;
 }
 .title-txt h2{
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 150%;
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.36);
 }
-.col{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    min-width: 400px;
-    margin: auto;
-}
+/* .item{
+    margin-bottom: 20px;
+} */
 /* ------card------------------------ */
 .card{
     position: relative;
     margin-bottom: 20px;
+
 }
 .picContainer{
     width: 100%;
@@ -60,22 +56,23 @@ section.title{
 /* ------tag------------------ */
 .tag{
     position: absolute;
-    top: 12px;
-    left: 6px;
+    top: 0.75rem;
+    left: 0.375rem;
+    padding: 0.3125rem 0.625rem 0.3125rem 0.625rem;
     background-color: rgba(255, 124, 124, 0.8);
     color: #FFFFFF;
-    padding: 5px 10px 5px 5px;
-    font-size: 14px;
+    font-size: 0.875rem;
     box-sizing: border-box;
+    text-align: center;
 }
 .tag::before{
     content: '';
     display: block;
     width: 0px;
     height: 0px;
-    border-right: 12px solid rgba(255, 124, 124, 0.8);
-    border-bottom: 12px solid transparent;
-    border-top: 12px solid transparent;
+    border-right: 0.75rem solid rgba(255, 124, 124, 0.8);
+    border-bottom: 0.75rem solid transparent;
+    border-top: 0.75rem solid transparent;
     position: absolute;
     top: 0;
     right: 100%;
@@ -89,28 +86,6 @@ section.title{
 .overlap-top:hover{
     opacity: 0;
 }
-/* ------RWD----------------------- */
-@media screen and (min-width: 768px){
-    .wrap{
-        max-width: 1200px;
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-    }
-    .col{
-        width: 50%;
-    }
-}
-@media screen and (min-width: 1024px){
-    .col{
-        width: 33.333333%;
-    }
-}
-@media screen and (min-width: 1200px){
-    .col{
-        width: 25%;
-    }
-}
 /* ----card-txt-----------------------
 */
 .card-txt{
@@ -119,7 +94,7 @@ section.title{
     align-items: center;
     padding: 10px 5px;
     letter-spacing: 0.5px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .btn{
     display: flex;
@@ -127,7 +102,7 @@ section.title{
     align-items: center;
 }
 .btn button{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #D08B66;
     background-color: #FFFFFF;
     border: 1px solid #D08B66;
@@ -145,4 +120,20 @@ section.title{
 .btn-2 button{
     display: block;
     width: 100%;
+}
+/* ------RWD----------------------- */
+@media screen and (max-width: 767px) {
+    :root{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 389px) {
+    :root{
+        font-size: 12px;
+    }
+        .tag::before{
+        border-right: 9.75px solid rgba(255, 124, 124, 0.8);
+        border-bottom: 9.75px solid transparent;
+        border-top: 9.75px solid transparent;
+    }
 }

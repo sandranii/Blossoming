@@ -8,10 +8,16 @@
     <link rel="icon" type="image/x-icon" href="./image/favicon/favicon.ico">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/products-frest-bouquet.css">
+    <link rel="stylesheet" href="./css/weekly-bouquet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <!-- <script src="./javascript/jquery-3.6.0.min.js"></script> -->
+    <script src="./javascript/add-to-cart.js"></script>
+    <!-- <script src="./javascript/weekly-bouquet.js"></script> -->
+
 </head>
 <body>
     <header>
@@ -70,216 +76,262 @@
             </div>
         </nav>
     </header>
+    <!-- ----------購物車panel---------- -->
+    <div class="cart-panel">
+        <div class="cart-panel-title">購物車</div>
+        <div id="cartItems" class="cart-items">
+            <div id="newItem" class="newItem">
+            </div>
+        </div>
+        <!-- <div id="content" style="display: none;">	 -->
+        <div id="content" >	
+            <nav>
+                Item : <span id="itemCount">0</span> item(s)
+            </nav>
+            <nav>
+                Subtotal : $ <span id="subtotal">0</span>
+            </nav>
+        </div>
+        <div id="shopButton">
+            <span class="cartProcess"><a href="4_cartEdit.html">Edit Cart</a></span>
+            <span class="cartProcess">訂單結帳</span>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <hr>
     <main>
         <section class="title">
             <div class="title-txt">
                 <h2>新鮮花束<br>Fresh Bouquet</h2>
             </div>
         </section>
-        <section>
-            <div class="wrap">
-                <div class="col">
-                    <a href="fb01.html" class="product-link">
+        
+        <section class="products">
+            <div class="container">
+                <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                    <div class="col">
                         <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/01-1.jpg">                    
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/01-2.jpg">
-                            </div>
-                            <div class="tag">七夕限定</div>
+                            <a href="./fb01.html" class="card-link">
+                                <div class="picContainer overlap-bottom">
+                                    <img src="image/pic/products/fresh-bouquet/01-1.jpg">                    
+                                </div>
+                                <div class="picContainer overlap-top">
+                                    <img src="image/pic/products/fresh-bouquet/01-2.jpg">
+                                </div>
+                                <div class="tag">八月限定</div>
+                            </a>    
                             <div class="card-txt">
                                 <p>青春的詩</p>
                                 <p>NT $980</p>
                             </div>
                             <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
+                                <button id="A1001" class="add-to-cart">加入購物車
+                                    <input type="hidden" value="01-2.jpg|青春的詩|980">
+                                </button>
                                 <button class="buy">直接購買</button>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
+                    </div>
+                    <div class="col">
                         <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/02-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/02-2.jpg">
-                            </div>
-                            <div class="tag">七夕限定</div>
+                            <a href="./fb01.html" class="card-link">
+                                <div class="picContainer overlap-bottom">
+                                    <img src="image/pic/products/fresh-bouquet/02-1.jpg">
+                                </div>
+                                <div class="picContainer overlap-top">
+                                    <img src="image/pic/products/fresh-bouquet/02-2.jpg">
+                                </div>
+                                <div class="tag">八月限定</div>
+                            </a>    
                             <div class="card-txt">
                                 <p>夏日戀曲</p>
                                 <p>NT $980</p>
                             </div>
                             <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
+                                <button id="A1002" class="add-to-cart">加入購物車
+                                    <input type="hidden" value="02-2.jpg|夏日戀曲|980">
+                                </button>
                                 <button class="buy">直接購買</button>
                             </div>   
                         </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
+                    </div>
+                    <div class="col">
                         <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/03-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/03-2.jpg">
-                            </div>
-                            <div class="tag">七夕限定</div>
+                            <a href="./fb01.html" class="card-link">
+                                <div class="picContainer overlap-bottom">
+                                    <img src="image/pic/products/fresh-bouquet/03-1.jpg">
+                                </div>
+                                <div class="picContainer overlap-top">
+                                    <img src="image/pic/products/fresh-bouquet/03-2.jpg">
+                                </div>
+                            </a>    
+                            <div class="tag">八月限定</div>
                             <div class="card-txt">
                                 <p>春之記號</p>
                                 <p>NT $980</p>
                             </div>
                             <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
+                                <button id="A1003" class="add-to-cart">加入購物車
+                                    <input type="hidden" value="03-2.jpg|春之記號|980">
+                                </button>
                                 <button class="buy">直接購買</button>
                             </div>   
                         </div>
-                    </a>  
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
+                    </div>
+                    <div class="col">
                         <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/04-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/04-2.jpg">
-                            </div>
+                            <a href="./fb01.html" class="card-link">
+                                <div class="picContainer overlap-bottom">
+                                    <img src="image/pic/products/fresh-bouquet/04-1.jpg">
+                                </div>
+                                <div class="picContainer overlap-top">
+                                    <img src="image/pic/products/fresh-bouquet/04-2.jpg">
+                                </div>
+                            </a>    
                             <div class="card-txt">
                                 <p>粉色秘密</p>
                                 <p>NT $980</p>
                             </div>
                             <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
+                                <button id="A1004" class="add-to-cart">加入購物車
+                                    <input type="hidden" value="04-2.jpg|粉色秘密|980">
+                                </button>
                                 <button class="buy">直接購買</button>
                             </div>   
                         </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
+                    </div>
+                    <div class="col">
                         <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/05-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/05-2.jpg">
-                            </div>
+                            <a href="./fb01.html" class="card-link">
+                                <div class="picContainer overlap-bottom">
+                                    <img src="image/pic/products/fresh-bouquet/05-1.jpg">
+                                </div>
+                                <div class="picContainer overlap-top">
+                                    <img src="image/pic/products/fresh-bouquet/05-2.jpg">
+                                </div>
+                            </a>
                             <div class="card-txt">
                                 <p>橘子汽水</p>
                                 <p>NT $980</p>
                             </div>
                             <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
+                                <button id="A1005" class="add-to-cart">加入購物車
+                                    <input type="hidden" value="05-2.jpg|橘子汽水|980">
+                                </button>
                                 <button class="buy">直接購買</button>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
+                    </div>
+                    <div class="col">
                         <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/06-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/06-2.jpg">
-                            </div>
+                            <a href="./fb01.html" class="card-link">
+                                <div class="picContainer overlap-bottom">
+                                    <img src="image/pic/products/fresh-bouquet/06-1.jpg">
+                                </div>
+                                <div class="picContainer overlap-top">
+                                    <img src="image/pic/products/fresh-bouquet/06-2.jpg">
+                                </div>
+                            </a>
                             <div class="card-txt">
                                 <p>藍色的你</p>
-                                <p>NT $980</p>
+                                <p>NT $880</p>
                             </div>
                             <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
+                                <button id="A1006" class="add-to-cart">加入購物車
+                                    <input type="hidden" value="06-2.jpg|藍色的你|880">
+                                </button>
                                 <button class="buy">直接購買</button>
                             </div>   
                         </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
+                    </div>
+                    <div class="col">
                         <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/07-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/07-2.jpg">
-                            </div>
+                            <a href="./fb01.html" class="card-link">
+                                <div class="picContainer overlap-bottom">
+                                    <img src="image/pic/products/fresh-bouquet/07-1.jpg">
+                                </div>
+                                <div class="picContainer overlap-top">
+                                    <img src="image/pic/products/fresh-bouquet/07-2.jpg">
+                                </div>
+                            </a>
                             <div class="card-txt">
                                 <p>十四行詩</p>
-                                <p>NT $980</p>
+                                <p>NT $880</p>
                             </div>
                             <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
+                                <button id="A1007" class="add-to-cart">加入購物車
+                                    <input type="hidden" value="07-2.jpg|十四行詩|880">
+                                </button>
                                 <button class="buy">直接購買</button>
                             </div>   
                         </div>
-                    </a>    
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
+                    </div>
+                    <div class="col">
                         <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/08-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/08-2.jpg">
-                            </div>
+                            <a href="./fb01.html" class="card-link">
+                                <div class="picContainer overlap-bottom">
+                                    <img src="image/pic/products/fresh-bouquet/08-1.jpg">
+                                </div>
+                                <div class="picContainer overlap-top">
+                                    <img src="image/pic/products/fresh-bouquet/08-2.jpg">
+                                </div>
+                            </a>
                             <div class="card-txt">
                                 <p>湖畔夕陽</p>
-                                <p>NT $980</p>
+                                <p>NT $880</p>
                             </div>
                             <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
+                                <button id="A1008" class="add-to-cart">加入購物車
+                                    <input type="hidden" value="08-2.jpg|湖畔夕陽|880">
+                                </button>
                                 <button class="buy">直接購買</button>
                             </div>   
                         </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
+                    </div>
+                    <div class="col">
                         <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/09-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/09-2.jpg">
-                            </div>
+                            <a href="./fb01.html" class="card-link">
+                                <div class="picContainer overlap-bottom">
+                                    <img src="image/pic/products/fresh-bouquet/09-1.jpg">
+                                </div>
+                                <div class="picContainer overlap-top">
+                                    <img src="image/pic/products/fresh-bouquet/09-2.jpg">
+                                </div>
+                            </a>
                             <div class="card-txt">
                                 <p>晴日花火</p>
-                                <p>NT $980</p>
+                                <p>NT $880</p>
                             </div>
                             <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
+                                <button id="A1009" class="add-to-cart">加入購物車
+                                    <input type="hidden" value="09-2.jpg|晴日花火|880">
+                                </button>
                                 <button class="buy">直接購買</button>
                             </div>   
                         </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" class="product-link">
+                    </div>
+                    <div class="col">
                         <div class="card">
-                            <div class="picContainer overlap-bottom">
-                                <img src="image/pic/products/fresh-bouquet/10-1.jpg">
-                            </div>
-                            <div class="picContainer overlap-top">
-                                <img src="image/pic/products/fresh-bouquet/10-2.jpg">
-                            </div>
+                            <a href="./fb01.html" class="card-link">
+                                <div class="picContainer overlap-bottom">
+                                    <img src="image/pic/products/fresh-bouquet/10-1.jpg">
+                                </div>
+                                <div class="picContainer overlap-top">
+                                    <img src="image/pic/products/fresh-bouquet/10-2.jpg">
+                                </div>
+                            </a>
                             <div class="card-txt">
                                 <p>盛夏情詩</p>
-                                <p>NT $980</p>
+                                <p>NT $880</p>
                             </div>
                             <div class="btn">
-                                <button class="add-to-cart">加入購物車</button>
+                                <button id="A1010" class="add-to-cart">加入購物車
+                                    <input type="hidden" value="10-2.jpg|盛夏情詩|880">
+                                </button>
                                 <button class="buy">直接購買</button>
                             </div>   
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>

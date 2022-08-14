@@ -15,6 +15,7 @@ button.go-to-top{
     height: 40px;
     border-radius: 50%;
     border: 1px solid var(--main-color);
+    background-color: var(--main-color);
     position: fixed;
     right: 5%;
     bottom: 5%;
@@ -24,6 +25,8 @@ button.go-to-top{
 }
 button.go-to-top:hover{
     cursor: pointer;
+    border: 1px solid #d08b66b8;
+    background-color: #d08b66b8;
 }
 /* ------------------Banner----- */
 section.full.banner{
@@ -49,7 +52,7 @@ section.full.banner{
     bottom: 4%;
     right: 4%;
     color: rgba(255, 255, 255, 1);
-    font-size: 16px;
+    font-size: 1.2rem;
     line-height: 150%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); 
     letter-spacing: 0.015em;
@@ -99,7 +102,7 @@ section.weekly .wrap{
     padding: 10px 14px;
     background-color: #F5F5F5;
     border-radius: 0 2px 0 0;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #C5977E;
 }
 /* -----週花描述---------------------- */
@@ -117,10 +120,10 @@ h2.title-weekly-txt{
 }
 /* -----共用title---------------------- */
 span.title-CH{
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 small.title-EN{
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 /* -----週花title---------------------- */
 .weekly-txt span.title-CH{
@@ -150,13 +153,13 @@ h2.title-weekly-txt small.title-EN::before{
     top: 0;
 }
 h3.subtitle{
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--second-color);
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
     padding: 25px 22px;
 }
 p.description{
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 200%;
     color: rgba(120, 120, 120, 0.8); 
     padding: 40px 40px 100px 40px;
@@ -169,12 +172,12 @@ p.description{
     align-items: center;
 }
 p.weekly-price{
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #D89B7B;
     text-shadow: 1px 1px 1px #ffffff;
 }
 /* ----------------------產品總覽---------- */
-section.products, section.courses{
+section.products, section.courses, section.products-Swiper, section.courses-Swiper{
     max-width: 1200px;
     width: 100%;
     margin: auto;
@@ -239,7 +242,7 @@ a.products-card-link{
 }
 .products-card-txt h3{
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: rgba(82, 79, 79, 0.83);
 }
 .products-card-txt h3.products-item-EN{
@@ -256,7 +259,7 @@ a.products-card-link{
     align-items: center;
 }
 .products-customize p{
-    font-size: 20px;
+    font-size: 1.25rem;
     color: rgba(100, 100, 100, 0.8);
     padding-right: 10px;
 }
@@ -290,11 +293,17 @@ a.products-card-link{
 .products-list.course .products-card-txt h3{
     color: #fff;
 }
+
+@media screen and (max-width:767px) {
+    :root{
+        font-size: 14px;
+    }
+}
 /* --------------------------RWD平板直向--- */
 
 @media screen and (min-width: 768px) {
     .banner-txt{
-        font-size: 26px;
+        font-size: 1.625rem;
     }
 /* -----週花區---------------------- */
     .weekly-bouquet{
@@ -405,13 +414,13 @@ section.weekly{
     width: 100%;
 }
 span.title-CH{
-    font-size: 32px;
+    font-size: 2rem;
 }
 small.title-EN{
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 h3.subtitle{
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 p.description{
@@ -425,20 +434,23 @@ p.description{
 /* --------------------------RWD桌機--- */
 @media screen and (min-width: 1200px){
     .banner-txt{
-        font-size: 32px;
+        font-size: 2rem;
     }
 }
 
 /* ====SWIPER==== */
-/* .swiper {
-    width: 600px;
-    height: 300px;
-  } */
+
 .products-list .swiper {
     width: 100%;
     height: 100%;
-    background-color: #f00;
+    
 }
+.swiper-wrapper{
+    padding-bottom: 30px;
+}
+/* .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0px !important;
+} */
 .products-list .swiper-slide {
     text-align: center;
     /* Center slide text vertically */
@@ -457,7 +469,6 @@ p.description{
     transition: 300ms;
     transform: scale(0.8);
     opacity: 0.5;
-    /* margin: -20px; */
 }
 .swiper-slide img {
     display: block;
@@ -470,11 +481,12 @@ p.description{
     transform: scale(1);
     z-index: 1;
     opacity: 1;
-    /* margin: 0 -40px; */
 }
 .products-list .swiper-pagination{
-    bottom: -50px;
+    z-index: 4;
+    bottom: 0;
 }
+
 .swiper-pagination-bullet {
     opacity: 1;
     background: rgba(0,0,0,0.2);
@@ -483,10 +495,9 @@ p.description{
 background: linear-gradient(45deg, rgb(246, 146, 89), rgb(241, 105, 117));
 }
 
-
-
-
-
+.mySwiper .swiper-button-prev, .swiper-button-next{
+   color:rgba(208, 139, 102, 0.6);
+}
 
 
 

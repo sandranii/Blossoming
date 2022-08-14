@@ -122,6 +122,7 @@ button.number:active{
     font-size: 18px;    
     padding: 80px 80px 80px 80px;
     box-sizing: border-box;
+    /* background-color: #fa0; */
 }
 
 .tab-list{
@@ -138,7 +139,7 @@ button.number:active{
     border-bottom: 4px solid rgba(208, 139, 102, 1);
 }
 .details-txt{
-    padding: 40px 20px 50px 25px;
+    padding: 40px 20px 50px 15px;
     border-top: 1px solid rgba(82, 79, 79, 0.83);
     border-bottom: 1px solid rgba(82, 79, 79, 0.83);
 }
@@ -147,6 +148,7 @@ button.number:active{
     font-size: 16px;
     line-height: 25px;
     color: rgba(100, 100, 100, 0.8);
+    background-color: #f00;
 }
 
 /* ---related-products-------------- */

@@ -35,8 +35,8 @@ $(document).ready(function(){
         const value = e.target.dataset.value;
         select[option] = value;
         console.log(select);
-        // localStorage.setItem(option, value);
-        localStorage.setItem("cart", JSON.stringify(select));
+        localStorage.setItem(option, value);
+        // localStorage.setItem("cart", JSON.stringify(select));
       });
  //開始日選取完後, 要變白色 
     $('#startDate').blur(function(e){
@@ -46,8 +46,8 @@ $(document).ready(function(){
             const option = e.target.dataset.option;
             select[option] = startDate.value;
             console.log(select);
-            // localStorage.setItem(option, startDate.value);
-            localStorage.setItem("cart", JSON.stringify(select));
+            localStorage.setItem(option, startDate.value);
+            // localStorage.setItem("cart", JSON.stringify(select));
         }else{
             $(this).removeClass('chosen');
         }
@@ -55,26 +55,27 @@ $(document).ready(function(){
     
     $('#submit').click(function(e){
         let i = 0;
-        select["數量"] = fillAmount[i].value;
+        select["amount"] = fillAmount[i].value;
         console.log(select);
         // e.stopPropagation();
         // return;
-        localStorage.setItem("cart", JSON.stringify(select));
-        // localStorage.setItem("數量", fillAmount[i].value);
+        // localStorage.setItem("cart", JSON.stringify(select));
+        localStorage.setItem("amount", fillAmount[i].value);
     })
-    let size = localStorage.getItem('款式');
-    let style = localStorage.getItem('風格');
-    let topic = localStorage.getItem('主題');
-    let delivery = localStorage.getItem('配送');
-    let date = localStorage.getItem('開始日');
-    let quantity = localStorage.getItem('數量');
+    let size = localStorage.getItem('size');
+    let style = localStorage.getItem('style');
+    let theme = localStorage.getItem('theme');
+    let delivery = localStorage.getItem('delivery');
+    let date = localStorage.getItem('startDate');
+    let amount = localStorage.getItem('amount');
 
     $('#size').text(size);
     $('#style').text(style);
-    $('#topic').text(topic);
+    $('#theme').text(theme);
     $('#delivery').text(delivery);
     $('#date').text(date);
-    $('#quantity').text(quantity);
+    $('#amount').text(amount);
+    console.log(amount);
     
 });
 //每行都要選取後 才能送出 不然要alert

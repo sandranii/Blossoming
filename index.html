@@ -198,8 +198,11 @@
                     </div>
                 </a>    
             </div>
-        </section>
-        <section class="Practice-Swiper">
+        <section class="products-Swiper">
+            <h2 class="title">
+                <span class="title-CH" lang="zh-Hant">產品總覽 /</span>
+                <small class="title-EN" lang="en">Products</small>
+            </h2> 
             <!-- Swiper -->
             <div class="products-list">
                 <div class="swiper mySwiper">
@@ -242,6 +245,61 @@
                                     </div>
                                 </div>
                             </a>  
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="courses-Swiper">
+            <h2 class="title title-courses">
+                <span class="title-CH" lang="zh-Hant">花藝課程 /</span>
+                <small class="title-EN" lang="en">Floral Courses</small>
+            </h2>
+            <!-- Swiper -->
+            <div class="products-list">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="products-card-link" href="floral-courses.html#basket">
+                                <div class="products-card course side">
+                                    <div class="products-card-pic">
+                                        <img src="./image/pic/index/4-0.jpg" alt="">
+                                    </div>
+                                    <div class="products-card-txt">
+                                        <h3 class="products-item-CH">歐式盆花課程</h3>
+                                        <h3 class="products-item-EN">Potted Flowers Course</h3>
+                                    </div>
+                                </div>
+                            </a>    
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="products-card-link" href="floral-courses.html#arrangement">
+                                <div class="products-card course main">
+                                    <div class="products-card-pic">
+                                        <img src="./image/pic/index/5-1.jpg" alt="">
+                                    </div>
+                                    <div class="products-card-txt">
+                                        <h3 class="products-item-CH">零基礎插花課</h3>
+                                        <h3 class="products-item-EN">Flower Arrangements</h3>
+                                    </div>
+                                </div>
+                            </a>   
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="products-card-link" href="floral-courses.html#hand-tied">
+                                <div class="products-card course side">
+                                    <div class="products-card-pic">
+                                        <img src="./image/pic/index/6-1.jpg" alt="">
+                                    </div>
+                                    <div class="products-card-txt">
+                                        <h3 class="products-item-CH">手綁花束課程</h3>
+                                        <h3 class="products-item-EN">Hand-Tied Bouquet</h3>
+                                    </div>
+                                </div>
+                            </a>    
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -304,28 +362,37 @@
 
     <script src="./javascript/go-to-top.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="./javascript/swiper.js"></script> -->
     <script>
         (function(){
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 3,
+                slidesPerView: 1,
                 spaceBetween: 0,
                 centeredSlides: true,
-                // slideActiveClass: 'swiper-slide-active',
                 loop: true,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
                 },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
+                // navigation: {
+                //     nextEl: '.swiper-button-next',
+                //     prevEl: '.swiper-button-prev',
+                // },
                 autoplay: {
                     delay: 3000,
                     disableOnInteraction: false,
                 },
                 autoHeight: true,
-                
+                breakpoints:{
+                    768:{
+                        slidesPerView: 3,
+                        spaceBetween: -10,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    }
+                }
             }); 
         })();
 
