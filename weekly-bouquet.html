@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/weekly-bouquet.css">
+    <!-- <link rel="stylesheet" href="./css/slider.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <script src="./javascript/jquery-3.6.0.min.js"></script>
     <script src="./javascript/weekly-bouquet.js"></script>
+    <script src="./javascript/main.js"></script>
+
 </head>
 <body>
     <header>
@@ -41,10 +44,12 @@
                         <li class="main-menu-list-item">
                             <a class="main-menu-list-item-label" href="./customization.html">客製商品</a>
                         </li>
-                        <li class="main-menu-list-item dropdown">
-                            <a class="main-menu-list-item-label"  href="./floral-courses.html">花藝課程</a>
-                            <ul class="dropdown_nav">
-                                <li class="dropdown_nav_item"><a href="./floral-courses.html#basket">歐式花籃課程</a></li>
+                        <li id="mainMenuDropdown" class="main-menu-list-item dropdown">
+                            <a class="main-menu-list-item-label" href="javascript:void(0)">花藝課程
+                                <img id="expandMore" class="expand-more" src="./image/icon/expand-more.svg" alt="">
+                            </a>
+                            <ul id="dropdownNav" class="dropdown_nav">
+                                <li class="dropdown_nav_item"><a href="./floral-courses.html#basket">歐式盆花課程</a></li>
                                 <li class="dropdown_nav_item"><a href="./floral-courses.html#arrangement">零基礎插花課</a></li>
                                 <li class="dropdown_nav_item"><a href="./floral-courses.html#hand-tied">手綁花束課程</a></li>
                             </ul>
@@ -56,7 +61,7 @@
                 </div>
                 <!-- 功能導覽列 -->
                 <div class="action-menu">
-                    <a href="./cart.html" class="action-menu cart">
+                    <a href="#" class="action-menu cart">
                         <img class="icon" src="./image/icon/shopping-cart.svg" alt="">
                     </a>
                     <a href="" class="action-menu login">
@@ -73,20 +78,18 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="canvas">
             <div class="wrap main">
-                <div class="canvas-area">
-                    <div class="canvas-bg">
-                        <div class="bg"></div>
-                        <div class="content">                  
-                            <div class="title-n-pic">
-                                
-                                <h2 class="title-CH">週花<span>訂閱</span></h2>
-                                <div class="pic-area">
-                                  <div class="picContainer large">
-                                        <img id="large" src="./image/pic/weekly-bouquet/container-large.jpg" alt="">
-                                        <div class="nametag">#夏日戀曲</div>
-                                    </div>
+                <div class="canvas-bg">
+                    <div class="content">                  
+                        <div class="title-n-pic">
+                            <h2 class="title-CH">週花<span>訂閱</span></h2>
+                            <div class="pic-area">
+                                <div class="picContainer large">
+                                    <img id="large" src="./image/pic/weekly-bouquet/container-large.jpg" alt="">
+                                    <div class="nametag">#夏日戀曲</div>
+                                </div>
+                                <div class="view">
                                     <div class="group-small">
                                         <div class="picContainer small">
                                             <img class="small" src="./image/pic/weekly-bouquet/container-large.jpg" alt="">
@@ -99,52 +102,52 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
-                            <div class="windows-n-form">
-                                <h2 class="title-EN">Weekly Bouquet</h2>
-                                <form class="form" id="weeklyForm">
-                                    <h3 class="subtitle">訂閱制服務｜生活週花</h3>
-                                    <div class="option-list">
-                                        <div class="option-list-item">
-                                            <p>尺 寸</p>
-                                            <button type="button" class="btn" data-option="size" data-value="經典">經典</button>
-                                            <button type="button" class="btn" data-option="size" data-value="進階">進階</button>
-                                        </div>
-                                        <div class="option-list-item">
-                                            <p>風 格</p>
-                                            <button type="button" class="btn" data-option="style" data-value="歐式繽紛">歐式繽紛</button>
-                                            <button type="button" class="btn" data-option="style" data-value="法式優雅">法式優雅</button>
-                                            <button type="button" class="btn" data-option="style" data-value="韓式清新">韓式清新</button>
-                                        </div>
-                                        <div class="option-list-item">
-                                            <p>主 題</p>
-                                            <button type="button" class="btn" data-option="theme" data-value="七夕">七夕</button>
-                                            <button type="button" class="btn" data-option="theme" data-value="慶生">慶生</button>
-                                            <button type="button" class="btn" data-option="theme" data-value="告白">告白</button>
-                                            <button type="button" class="btn" data-option="theme" data-value="不指定">不指定</button>
-                                        </div>
-                                        <div class="option-list-item">
-                                            <p>配 送</p>
-                                            <button type="button" class="btn" data-option="delivery" data-value="專人配送">專人配送</button>
-                                            <button type="button" class="btn" data-option="delivery" data-value="到店自取">到店自取</button>
-                                        </div>
-                                        <div class="option-list-item">
-                                            <p>開始日</p>
-                                            <input type="week" name="" id="startDate" min="2022-W33" data-option="startDate">
-                                        </div>
+                        </div>
+                        <div class="windows-n-form">
+                            <form class="form" id="weeklyForm">
+                                <h3 class="subtitle">訂閱制服務｜生活週花</h3>
+                                <div class="option-list">
+                                    <div class="option-list-item">
+                                        <p>尺 寸</p>
+                                        <button type="button" class="btn" data-option="size" data-value="經典">經典</button>
+                                        <button type="button" class="btn" data-option="size" data-value="進階">進階</button>
                                     </div>
-                                    <div class="form-foot">
-                                        <p class="price">NT$2,200</p>
-                                        <div class="amount">
-                                            <button type="button" class="number btnMinus">－</button>
-                                            <input type="text" class="fill-amount" min="1" value="1" data-option="amount">
-                                            <button type="button" class="number btnPlus">＋</button>
-                                        </div>
-                                        <button type="button" id="submit" class="submit add-to-cart">加入購物車</button>
+                                    <div class="option-list-item">
+                                        <p>風 格</p>
+                                        <button type="button" class="btn" data-option="style" data-value="歐式繽紛">歐式繽紛</button>
+                                        <button type="button" class="btn" data-option="style" data-value="法式優雅">法式優雅</button>
+                                        <button type="button" class="btn" data-option="style" data-value="韓式清新">韓式清新</button>
                                     </div>
-                                </form>
-                            </div>
-                        </div>    
+                                    <div class="option-list-item">
+                                        <p>主 題</p>
+                                        <button type="button" class="btn" data-option="theme" data-value="七夕">七夕</button>
+                                        <button type="button" class="btn" data-option="theme" data-value="慶生">慶生</button>
+                                        <button type="button" class="btn" data-option="theme" data-value="告白">告白</button>
+                                        <button type="button" class="btn" data-option="theme" data-value="不指定">不指定</button>
+                                    </div>
+                                    <div class="option-list-item">
+                                        <p>配 送</p>
+                                        <button type="button" class="btn" data-option="delivery" data-value="專人配送">專人配送</button>
+                                        <button type="button" class="btn" data-option="delivery" data-value="到店自取">到店自取</button>
+                                    </div>
+                                    <div class="option-list-item">
+                                        <p>開始日</p>
+                                        <input type="date" name="" id="startDate" min="2022-W33" data-option="startDate">
+                                    </div>
+                                </div>
+                                <div class="form-foot">
+                                    <p class="price">NT$2,200</p>
+                                    <div class="amount">
+                                        <button type="button" class="number btnMinus">－</button>
+                                        <input type="text" class="fill-amount" min="1" value="1" data-option="amount">
+                                        <button type="button" class="number btnPlus">＋</button>
+                                    </div>
+                                    <button type="button" id="submit" class="submit add-to-cart">加入購物車</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>    
                 </div>
             </div>
@@ -157,20 +160,22 @@
                 </div>
                 <div class="details">
                     <div class="details-txt">
-                        <p>/ 每。週。選。花 /<br>
-                            <br>
-                            以花草感受生活，也可作為傳遞你心意的媒介。<br>
-                            挑選當季新鮮花材，每週傳送到你的手中。<br>
-                            <br>
-                            / 訂閱制服務描述/<br>
-                            <br>
-                            花材：<br>
-                            【經典】使用每週四於花市採購的新鮮花卉，依照季節變換更替花種；<br>
-                            【進階】花材數量、種類豐富度更高。<br>
-                            <br>
-                            配送：每週五 10:00 - 18:00 配送。<br>
-                            如需指定配送時間，會另外收取專車配送費，歡迎來訊洽詢。
-                        </p>
+                        <p>每週一束花，以花草感受生活，<br>
+                        也可作為傳遞你心意的媒介。<br>
+                        挑選當季新鮮花材，每週傳送到你的手中。</p>
+                        <h4>▍尺寸</h4>
+                        <div class="details-size">
+                            <h5>經典：</h5>
+                            <p>花束高度約40±3cm，<br>花器建議尺寸Ø3~6cm、H12~18cm。</p>
+                            <h5> 進階：</h5>
+                            <p>花束高度50-60cm不等，<br>花器建議尺寸Ø6~12cm、H16~20cm。</p>
+                        </div>
+                        <h4>▍配送</h4>
+                        <div class="details-delivery">
+                            <p>每週五 10:00 - 18:00 配送。<br>
+                            如需指定配送時間，會另外收取專車配送費，歡迎來訊洽詢。</p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

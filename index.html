@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <script src="./javascript/main.js"></script>
 </head>
 <body>
     <header>
@@ -40,9 +41,11 @@
                         <li class="main-menu-list-item">
                             <a class="main-menu-list-item-label" href="./customization.html">客製商品</a>
                         </li>
-                        <li class="main-menu-list-item dropdown">
-                            <a class="main-menu-list-item-label"  href="./floral-courses.html">花藝課程</a>
-                            <ul class="dropdown_nav">
+                        <li id="mainMenuDropdown" class="main-menu-list-item dropdown">
+                            <a class="main-menu-list-item-label" href="javascript:void(0)">花藝課程
+                                <img id="expandMore" class="expand-more" src="./image/icon/expand-more.svg" alt="">
+                            </a>
+                            <ul id="dropdownNav" class="dropdown_nav">
                                 <li class="dropdown_nav_item"><a href="./floral-courses.html#basket">歐式盆花課程</a></li>
                                 <li class="dropdown_nav_item"><a href="./floral-courses.html#arrangement">零基礎插花課</a></li>
                                 <li class="dropdown_nav_item"><a href="./floral-courses.html#hand-tied">手綁花束課程</a></li>
@@ -55,7 +58,7 @@
                 </div>
                 <!-- 功能導覽列 -->
                 <div class="action-menu">
-                    <a href="./cart.html" class="action-menu cart">
+                    <a href="#" class="action-menu cart">
                         <img class="icon" src="./image/icon/shopping-cart.svg" alt="">
                     </a>
                     <a href="" class="action-menu login">
@@ -113,7 +116,7 @@
                 </div>
             </div>    
         </section>
-        <section class="products">
+        <section class="products products-mb">
             <h2 class="title">
                 <span class="title-CH" lang="zh-Hant">產品總覽 /</span>
                 <small class="title-EN" lang="en">Products</small>
@@ -158,7 +161,7 @@
                 <a class="customization-link" href="customization.html">客製商品</a>
             </div>
         </section>
-        <section class="courses">
+        <section class="courses courses-mb">
             <h2 class="title title-courses">
                 <span class="title-CH" lang="zh-Hant">花藝課程 /</span>
                 <small class="title-EN" lang="en">Floral Courses</small>
@@ -198,7 +201,8 @@
                     </div>
                 </a>    
             </div>
-        <section class="products-Swiper">
+        </section>
+        <section class="products-Swiper products-tab">
             <h2 class="title">
                 <span class="title-CH" lang="zh-Hant">產品總覽 /</span>
                 <small class="title-EN" lang="en">Products</small>
@@ -253,7 +257,7 @@
                 </div>
             </div>
         </section>
-        <section class="courses-Swiper">
+        <section class="courses-Swiper courses-tab">
             <h2 class="title title-courses">
                 <span class="title-CH" lang="zh-Hant">花藝課程 /</span>
                 <small class="title-EN" lang="en">Floral Courses</small>

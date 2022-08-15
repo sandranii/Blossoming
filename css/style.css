@@ -60,20 +60,24 @@ section.full.banner{
 }
 /* ------------------Weekly 週花----- */
 section.weekly{  
-    max-width: 1200px;  
+    /* max-width: 1200px;   */
     width: 100%;
-    margin: auto;
-    margin-bottom: 60px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    /* background-color: #ff0; */
 }
 section.weekly .wrap{
     max-width: 1200px;
     width: 100%;
     position: relative; 
     margin: auto;
+    /* background-color: red; */
 }
 .weekly-bgcanvas{
     width: 100%;
+    margin: auto;
     max-width: 1030px;
+    max-width: 1200px;
     background-color: rgba(226, 216, 201, 0.95);
     /* border: 6px solid rgba(255, 255, 255, 0.53); */
     /* border-radius: 87px 0px 0px 0px; */
@@ -280,7 +284,6 @@ a.products-card-link{
     position: relative;
     z-index: 1;
 }
-
 /* ----花藝課程字卡------------------- */
 .products-list.course .products-card-txt{
     background-color: rgba(210, 191, 166, 0.82);
@@ -293,15 +296,25 @@ a.products-card-link{
 .products-list.course .products-card-txt h3{
     color: #fff;
 }
+/* --------------------------RWD手機--- */
 
 @media screen and (max-width:767px) {
     :root{
         font-size: 14px;
     }
+    section.products-tab, section.courses-tab{
+        display: none;
+    }
 }
 /* --------------------------RWD平板直向--- */
 
 @media screen and (min-width: 768px) {
+    section.products-mb, section.courses-mb{
+        display: none;
+    }
+    section.products-tab, section.courses-tab{
+        display: block;
+    }
     .banner-txt{
         font-size: 1.625rem;
     }
@@ -328,7 +341,6 @@ a.products-card-link{
         width: 66.666666%;
         padding: 80px 0;
     }
-
 /* -----週花title---------------------- */
     .weekly-txt span.title-CH{
         padding-right: 8%;
@@ -344,7 +356,7 @@ a.products-card-link{
         padding: 20px 10px 40px 38px;
     }
     a.products-card-link{
-        margin: 0;
+        margin: 0 20px;
     }
     .products-list{
         display: flex;
@@ -358,78 +370,48 @@ a.products-card-link{
     .products .products-customize{
         justify-content: flex-end;
     }
-    .products-list.course .products-card{
-        border-radius: 0;
-    }
-    .products-list.course .products-card-pic{
-        border-radius: 160px 160px 0 0;
-        width: 30%;
-    }
-    .products-list.course .products-card.side{
-        /* margin: -30px; */
-        
-    }
-    .products-list.course .main{
-        /* width: 400px; */
-        /* height: 560px; */
-        overflow: hidden;
-    }
-    .products-list.course .main .products-card-pic{
-        /* border-radius: 200px 200px 0 0;     */
-        /* width: 400px;
-        height: 560px; */
-    }
-
-}
 /* --------------------------RWD平板橫向--- */
 @media screen and (min-width: 1024px){
-/* -----週花區---------------------- */
-section.weekly{  
-    height: 750px;
-}
-.weekly-bouquet{    
-    max-width: 850px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5% auto;
-    /* background-color: #f00; */
-} 
-.weekly-bgcanvas{
-    /* width: 100%; */
-    /* max-width: 80%; */
-    max-width: 1030px;
-    /* height: 900px; */
-    background-color: rgba(226, 216, 201, 0.95);
-    border: 6px solid rgba(255, 255, 255, 0.53);
-    /* border-radius: 87px 0px 0px 0px; */
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.weekly-bouquet .weekly-pic{
-    border-radius: 200px 200px 0 0;
-    max-width: 400px;
-    padding-top: 0px;
-    width: 100%;
-}
-span.title-CH{
-    font-size: 2rem;
-}
-small.title-EN{
-    font-size: 1.5rem;
-}
-h3.subtitle{
-    font-size: 1.375rem;
-}
+    /* -----週花區---------------------- */
+    section.weekly{  
+        /* height: 750px; */
+    }
+    .weekly-bouquet{    
+        max-width: 850px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        /* background-color: #f00; */
+    } 
+    .weekly-bgcanvas{
+        max-width: 1030px;
+        background-color: rgba(226, 216, 201, 0.95);
+        border: 6px solid rgba(255, 255, 255, 0.53);
+    }
+    .weekly-bouquet .weekly-pic{
+        border-radius: 200px 200px 0 0;
+        max-width: 400px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    span.title-CH{
+        font-size: 2rem;
+    }
+    small.title-EN{
+        font-size: 1.5rem;
+    }
+    h3.subtitle{
+        font-size: 1.375rem;
+    }
 
-p.description{
-    padding: 50px 10px 100px 38px;
-    letter-spacing: 0.04rem;
-}
-.weekly-price-foot{
-    padding-bottom: 40px;
-}
+    p.description{
+        padding: 50px 10px 100px 38px;
+        letter-spacing: 0.04rem;
+    }
+    .weekly-price-foot{
+        padding-bottom: 40px;
+    }
 }
 /* --------------------------RWD桌機--- */
 @media screen and (min-width: 1200px){
@@ -437,20 +419,14 @@ p.description{
         font-size: 2rem;
     }
 }
-
 /* ====SWIPER==== */
-
 .products-list .swiper {
     width: 100%;
     height: 100%;
-    
 }
 .swiper-wrapper{
     padding-bottom: 30px;
 }
-/* .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
-    bottom: 0px !important;
-} */
 .products-list .swiper-slide {
     text-align: center;
     /* Center slide text vertically */
@@ -486,7 +462,6 @@ p.description{
     z-index: 4;
     bottom: 0;
 }
-
 .swiper-pagination-bullet {
     opacity: 1;
     background: rgba(0,0,0,0.2);
@@ -498,8 +473,3 @@ background: linear-gradient(45deg, rgb(246, 146, 89), rgb(241, 105, 117));
 .mySwiper .swiper-button-prev, .swiper-button-next{
    color:rgba(208, 139, 102, 0.6);
 }
-
-
-
-
-

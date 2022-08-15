@@ -7,7 +7,7 @@ window.addEventListener("load", function(){
     let curIndex=0;
 
     $id("btnLeft").onclick = function(){
-        clearInterval(timerId);
+        // clearInterval(timerId);
         curIndex--; 
         slider.style.left = -300 * curIndex+ 'px';
         if(curIndex == 0){
@@ -17,11 +17,11 @@ window.addEventListener("load", function(){
         // setInterval(run,1000);       
     }
     $id("btnRight").onclick = function(){
-        clearInterval(timerId);
+        // clearInterval(timerId);
         if(curIndex>=4){
             $id("btnRight").disabled = true;
-            alert("curIndex >= 4");
-            clearInterval(timerId);
+            // alert("curIndex >= 4");
+            // clearInterval(timerId);
         }else{
             curIndex++;
             slider.style.left = -300 * curIndex+ 'px';  
@@ -31,23 +31,23 @@ window.addEventListener("load", function(){
 
     }
 
-    let timerId;
-    function run() {
-        timerId = setInterval( function () {
-            curIndex++;
-            slider.style.left = -300 * curIndex + 'px';
-            slider.style.transition = 'left 0.7s linear';
-            if(curIndex >= 4){
-                // alert("nooooo");
-                clearInterval(timerId);
-                console.log(timerId);
-            }else{
-                run();
-            }
-        }, 1000);
-        // return;
-    }
-    run();
+    // let timerId;
+    // function run() {
+    //     timerId = setInterval( function () {
+    //         curIndex++;
+    //         slider.style.left = -300 * curIndex + 'px';
+    //         slider.style.transition = 'left 0.7s linear';
+    //         if(curIndex >= 4){
+    //             // alert("nooooo");
+    //             clearInterval(timerId);
+    //             console.log(timerId);
+    //         }else{
+    //             run();
+    //         }
+    //     }, 1000);
+    //     // return;
+    // }
+    // run();
     // let stop=function(){
     //     clearInterval(timerId);
     // }

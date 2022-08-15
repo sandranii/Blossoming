@@ -10,14 +10,12 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/products-frest-bouquet.css">
-    <link rel="stylesheet" href="./css/weekly-bouquet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
-    <!-- <script src="./javascript/jquery-3.6.0.min.js"></script> -->
+    <script src="./javascript/jquery-3.6.0.min.js"></script>
     <script src="./javascript/add-to-cart.js"></script>
-    <!-- <script src="./javascript/weekly-bouquet.js"></script> -->
-
+    <script src="./javascript/main.js"></script>
 </head>
 <body>
     <header>
@@ -45,10 +43,12 @@
                         <li class="main-menu-list-item">
                             <a class="main-menu-list-item-label" href="./customization.html">客製商品</a>
                         </li>
-                        <li class="main-menu-list-item dropdown">
-                            <a class="main-menu-list-item-label"  href="./floral-courses.html">花藝課程</a>
-                            <ul class="dropdown_nav">
-                                <li class="dropdown_nav_item"><a href="./floral-courses.html#basket">歐式花籃課程</a></li>
+                        <li id="mainMenuDropdown" class="main-menu-list-item dropdown">
+                            <a class="main-menu-list-item-label" href="javascript:void(0)">花藝課程
+                                <img id="expandMore" class="expand-more" src="./image/icon/expand-more.svg" alt="">
+                            </a>
+                            <ul id="dropdownNav" class="dropdown_nav">
+                                <li class="dropdown_nav_item"><a href="./floral-courses.html#basket">歐式盆花課程</a></li>
                                 <li class="dropdown_nav_item"><a href="./floral-courses.html#arrangement">零基礎插花課</a></li>
                                 <li class="dropdown_nav_item"><a href="./floral-courses.html#hand-tied">手綁花束課程</a></li>
                             </ul>
@@ -60,7 +60,7 @@
                 </div>
                 <!-- 功能導覽列 -->
                 <div class="action-menu">
-                    <a href="" class="action-menu cart">
+                    <a href="#" class="action-menu cart">
                         <img class="icon" src="./image/icon/shopping-cart.svg" alt="">
                     </a>
                     <a href="" class="action-menu login">
@@ -77,14 +77,12 @@
         </nav>
     </header>
     <!-- ----------購物車panel---------- -->
-    <div class="cart-panel">
+    <div class="cart-panel" id="cartPanel">
+        <button id="btnClosePanel" class="btnClosePanel" >X</button>
         <div class="cart-panel-title">購物車</div>
-        <div id="cartItems" class="cart-items">
             <div id="newItem" class="newItem">
             </div>
-        </div>
-        <!-- <div id="content" style="display: none;">	 -->
-        <div id="content" class="cart-panel-content">	
+        <div id="content" class="cart-panel-content" style="display: none;">	
             <nav>
                 Item : <span id="itemCount">0</span> item(s)
             </nav>
@@ -93,12 +91,10 @@
             </nav>
         </div>
         <div id="shopButton" class="cart-panel-shopButton">
-            <span class="cartProcess"><a href="4_cartEdit.html">Edit Cart</a></span>
-            <span class="cartProcess">訂單結帳</span>
+            <span class="cartProcess"><a href="#">訂單結帳</a></span>
         </div>
         <div style="clear:both;"></div>
     </div>
-    <hr>
     <main>
         <section class="title">
             <div class="title-txt">

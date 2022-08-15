@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <script src="./javascript/main.js"></script>
 </head>
 <body>
     <header>
@@ -39,10 +40,12 @@
                         <li class="main-menu-list-item">
                             <a class="main-menu-list-item-label" href="./customization.html">客製商品</a>
                         </li>
-                        <li class="main-menu-list-item dropdown">
-                            <a class="main-menu-list-item-label"  href="./floral-courses.html">花藝課程</a>
-                            <ul class="dropdown_nav">
-                                <li class="dropdown_nav_item"><a href="./floral-courses.html#basket">歐式花籃課程</a></li>
+                        <li id="mainMenuDropdown" class="main-menu-list-item dropdown">
+                            <a class="main-menu-list-item-label" href="javascript:void(0)">花藝課程
+                                <img id="expandMore" class="expand-more" src="./image/icon/expand-more.svg" alt="">
+                            </a>
+                            <ul id="dropdownNav" class="dropdown_nav">
+                                <li class="dropdown_nav_item"><a href="./floral-courses.html#basket">歐式盆花課程</a></li>
                                 <li class="dropdown_nav_item"><a href="./floral-courses.html#arrangement">零基礎插花課</a></li>
                                 <li class="dropdown_nav_item"><a href="./floral-courses.html#hand-tied">手綁花束課程</a></li>
                             </ul>
@@ -54,7 +57,7 @@
                 </div>
                 <!-- 功能導覽列 -->
                 <div class="action-menu">
-                    <a href="" class="action-menu cart">
+                    <a href="#" class="action-menu cart">
                         <img class="icon" src="./image/icon/shopping-cart.svg" alt="">
                     </a>
                     <a href="" class="action-menu login">
@@ -86,7 +89,7 @@
                 <div class="ytContainer row" id="basket">
                     <div class="col">
                         <div class="description">
-                            <h3>歐式盆花課程 Potted Flowers Course</h3>
+                            <h3><span>歐式盆花課程&nbsp;</span><span>Potted Flowers Course</span></h3>
                             <h4>▍古典花型教學．畢德麥爾花型盆花．歐式古典花型必學花型</h4>
                             <p>歐式古典花型最經典的花型「畢德麥爾花型」，也稱作半球型，常見於婚宴主桌花，讓花藝教室的花藝師與大家分享，如何插作一款古典畢德麥爾花型盆花，從海綿切削、上花步驟以及花型重點，跟著老師的步驟一步一步完成，就能完成一款優雅的古典畢德麥爾花型盆花了喔！</p>
                             <button class="learn-more">瞭解更多</button>
@@ -102,7 +105,7 @@
                 <div class="ytContainer row" id="arrangement">
                     <div class="col">
                         <div class="description">
-                            <h3>零基礎插花課 Flower Arrangements Course</h3>
+                            <h3><span>零基礎插花課&nbsp;</span><span>Flower Arrangements Course</span></h3>
                             <h4>▍花藝基礎教學．基礎花束包裝．為自己手綁的花束穿上優雅的衣裳</h4>
                             <p>適合單一品種插花方式的花材很多，這集花藝師先與大家分享五款適合單一品種插花法的花材，有百合、檸檬文心蘭、鬱金香、小圓葉尤加利葉、翠珠，插花方式有投入式瓶插法以及劍山插法，歡迎大家觀看完這一集的影片內容後，也可以到家裡附近的花店或是花市採買一款花材回家試試，不需要花大錢，只要一樣花材或葉材，就能為居家生活捎來一抹生機。</p>
                             <button class="learn-more">瞭解更多</button>
@@ -118,7 +121,7 @@
                 <div class="ytContainer row" id="hand-tied">
                     <div class="col">
                         <div class="description">
-                            <h3>手綁花束課程 Hand-Tied Bouquet Course</h3>
+                            <h3><span>手綁花束課程&nbsp;</span><span>Hand-Tied Bouquet Course</span></h3>
                             <h4>▍花藝基礎教學．螺旋花腳手綁花束．V加OK手勢搭配演講廳模式的綁花法</h4>
                             <p>手綁花束好難，螺旋花腳老是綁不好嗎？<br>跟著花藝教室的花藝師的綁花步驟試試看，V加OK手勢，搭配演講廳模式的綁花法，保證螺旋花腳不會再失敗，花束也能輕鬆掌握輕盈層次感喔！</p>
                             <button class="learn-more">瞭解更多</button>
