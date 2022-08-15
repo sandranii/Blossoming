@@ -23,7 +23,10 @@ section.title .wrap .title-txt{
     left: 50%;
     transform: translate(-50%,-50%);
     color: #fff;
-    font-size: 32px;
+    width: 100%;
+}
+h2.title-txt-contact{
+    font-size: 28px;
     line-height: 150%;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.47);
     text-align: center;
@@ -36,19 +39,17 @@ section.title .wrap .title-txt{
 }
 .picContainer.banner{
     max-width: 1200px;
-    height: 580px;
+    height: 290px;
+}
+.picContainer.picContainer-slider{
+    max-width: 1200px;
+    height: 500px;
 }
 .picContainer{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-}
-.picContainer.item:first-child{
-    border-radius: 80px 0 0 0;
-}
-.picContainer.item{
-    border-radius:  0 80px 0 0;
 }
 .picContainer img{
     object-fit: cover;
@@ -59,24 +60,26 @@ section.title .wrap .title-txt{
 }
 /* --------------content row&item-------- */
 .row{
-    display: flex;
-    flex-wrap: wrap;
     margin: auto;
 }
 .item{
-    height: 540px;
-    width: 50%;
+    /* height: 540px; */
+    /* max-width: 540px; */
+    width: 100%;
     margin: 30px 0;
     box-sizing: border-box;
     background-color: var(--rice);
 }
 .info{
-    margin: 80px 60px 0 60px;
+    /* margin: 80px 60px 0 60px; */
     line-height: 250%;
-    font-size: 16px;
+    font-size: 14px;
+    padding: 100px 40px 100px 40px;
+    margin: auto;
+    /* width: 100%; */
 }
 .info h3{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -84,20 +87,53 @@ section.title .wrap .title-txt{
     font-weight: 500;
 }
 .slogan{
-    font-size: 28px;
-    line-height: 150%;
+    font-size: 26px;
     text-align: center;
-    padding: 250px 0px;
+    padding: 200px 0px;
     background-color: var(--rice-n-grey);
 }
-/* ------------wrap bottom---------------------- */
-.wrap.bottom{
-    display: flex;
+/* ------------RWD------------------------------- */
+@media screen and (min-width: 768px) {
+    h2.title-txt-contact{
+        font-size: 32px;
+    }
+    .picContainer.banner{
+        height: 580px;
+    }
+    .row{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .item{
+        /* height: 540px; */
+        /* min-height: 50%; */
+        max-height: 50%;
+        width: 50%;
+        margin: 30px 0;
+        box-sizing: border-box;
+        background-color: var(--rice);
+    }
+    .info{
+        padding: 80px 60px 80px 60px;
+        font-size: 16px;
+    }
+    .info h3{
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .row-slogan .picContainer{
+        order: 1;
+    }
+    .slogan{
+        font-size: 28px;
+        padding: 250px 0px;
+    }
 }
-.picContainer.bottom{
-    width: 300px;
-    height: 300px;
-    opacity: 0.85;
+@media screen and (min-width: 1024px){
+    .item{
+        height: 540px;
+    }
 }
-
+@media screen and (min-width: 1200px){}
 

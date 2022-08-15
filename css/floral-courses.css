@@ -5,7 +5,6 @@ body{
     color: var(--text);
 }
 /* ---主選單 分頁主題---------- */
-
 li.main-menu-list-item:nth-child(6) a.main-menu-list-item-label{
     color: rgba(178, 130, 104, 1);
     font-weight: 700;    
@@ -24,7 +23,10 @@ section.title .wrap .title-txt{
     left: 50%;
     transform: translate(-50%,-50%);
     color: #fff;
-    font-size: 32px;
+    width: 100%;
+}
+h2.title-txt-courses{
+    font-size: 28px;
     line-height: 150%;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.47);
     text-align: center;
@@ -32,13 +34,11 @@ section.title .wrap .title-txt{
 .wrap{
     max-width: 1200px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     margin: auto;
 }
 .picContainer.banner{
     max-width: 1200px;
-    height: 580px;
+    height: 290px;
 }
 .picContainer{
     width: 100%;
@@ -55,6 +55,7 @@ section.title .wrap .title-txt{
 }
 /* -------------------------------yt-------- */
 .yt-area{
+    max-width: 1200px;
     width: 100%;
     margin: auto;
     box-sizing: border-box;
@@ -65,36 +66,12 @@ section.title .wrap .title-txt{
     width: 100%;
     background-color: var(--rice);
     margin-bottom: 30px;
-    padding: 30px 40px;
+    padding: 30px 30px;
     box-sizing: border-box;
-}
-@media screen and (min-width:768px) {
-    .yt-area{
-        width: 100%;
-        max-width: 1200px;
-    }
-
-    .ytContainer.row{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .col{
-        width: calc(100% / 2 - 80px);
-    }
-    .ytContainer.row:nth-child(2) .col:nth-child(1){
-        order: 1;
-    }   
 }
 .col{
     box-sizing: border-box;
-}
-.ytContainer.row:first-child{
-    border-radius: 80px 0 0 0;
-}
-.ytContainer.row:last-child{
-    border-radius: 0 0 80px 0;
+    padding: 20px 0;
 }
 /* -----video------------------------- */
 .yt{
@@ -112,7 +89,7 @@ section.title .wrap .title-txt{
     flex-direction: column;
 }
 .description h3{
-    padding: 20px 0;
+    padding-bottom: 20px;
     font-size: 22px;
     color: var(--main-color);
     text-shadow: 2px 2px 1px #e6e6e6;
@@ -128,16 +105,18 @@ section.title .wrap .title-txt{
     padding: 20px 14px 10px 14px;
     flex-shrink: 1;
 }
-button{
+button.learn-more{
     font-size: 14px;
-    line-height: 180%;
     color: var(--main-color);
     background-color: #FFFFFF;
     border: 1px solid var(--main-color);
-    padding: 5px;
-    width: 100px;
+    width: 90px;
+    height: 40px;
     align-self: flex-end;
     margin-right: 14px;
+    font-family: 'Noto Serif TC', serif;
+    font-style: normal;
+    font-weight: 400;
 }
 button:hover{
     color: #FFFFFF;
@@ -145,4 +124,30 @@ button:hover{
 }
 button:active{
     transform: scale(0.9,0.9);
+}
+/* ------------RWD------------------------------- */
+@media screen and (min-width:768px) {
+    h2.title-txt-courses{
+        font-size: 32px;
+    }
+    .picContainer.banner{
+        height: 580px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .description h3{
+        padding: 20px 0;
+    }
+    .ytContainer.row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .col{
+        width: calc(100% / 2 - 80px);
+    }
+    .ytContainer.row:nth-child(2) .col:nth-child(1){
+        order: 1;
+    }   
 }

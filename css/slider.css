@@ -1,0 +1,104 @@
+/* ------------slider-pics --------------------- */
+.view{
+    position: relative;
+    max-width: 300px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+}
+.slider{
+    /* display: flex; */
+    width: 2400px;
+    /* flex-wrap: no-wrap; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.picContainer.bottom{
+    width: 300px;
+    height: 300px;
+    opacity: 0.85;
+    float: left;
+}
+/* ------shift input button------------ */
+.view input{
+    font-size: 50px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+.view input:first-child{
+    left: 0;
+}
+.view input:last-child{
+    right: 0;
+}
+/* ------RWD------------ */
+
+@media screen and (min-width: 768px){
+    .view{
+        max-width: 600px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .view{
+        max-width: 900px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .view{
+        max-width: 1200px;
+    }
+}
+
+/* ======================slider-pics-jquery========== */
+img.image{
+    width: 100%;
+    /* height: 500px; */
+}
+
+/*div 負責多的東西幫我藏起來,1. div 的寬跟li的寬一樣 代表一次看一筆 2. 用程式來抓寬度*/
+.sliderBoard{	/* div */
+	margin: 20px auto;
+	width: 90%;
+	/* height: 550px; */
+	overflow: hidden;
+}
+
+/*ul 寬要是li的寬的總和, ul負責做定位 和把小孩往左邊推*/
+.slider-pics-content{		/* ul */
+	position: relative;
+}
+
+/*li 負責排排站*/
+.slider-pics-content li{	/* li */
+	float: left;
+}
+
+/* circle button */
+.slider-pics-contentButton{
+	text-align: center;
+}
+.slider-pics-contentButton li{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #ffffff;
+	display: inline-block;
+	margin: 10px 5px;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    border: 1px solid #ccc;
+}
+.slider-pics-contentButton li.clicked{
+	background: #ffffff;
+}
+
+/* ------RWD------------ */
+@media screen and (min-width: 768px){
+   .sliderBoard{	/* div */
+        width: 100%;
+    } 
+}

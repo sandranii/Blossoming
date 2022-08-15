@@ -8,10 +8,13 @@
     <link rel="icon" type="image/x-icon" href="./image/favicon/favicon.ico">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/contact-us.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <script src="./javascript/jquery-3.6.0.js"></script>
+    <script src="./javascript/slider.js"></script>
 </head>
 <body>
     <header>
@@ -77,7 +80,7 @@
                     <img src="image/pic/contact/banner.jpg" alt="">
                 </div>
                 <div class="title-txt">
-                    <h2>聯絡我們<br>Contact Us</h2>
+                    <h2 class="title-txt-contact">聯絡我們<br>Contact Us</h2>
                 </div>               
             </div>
         </section>
@@ -98,30 +101,71 @@
                         </div>                       
                     </div>
                 </div>
-                <div class="row">
-                    <div class="item slogan">
-                        <h3>花若盛開，蝴蝶自來。</h3>                   
-                    </div>
+                <div class="row row-slogan">
                     <div class="picContainer item">
                         <img src="image/pic/contact/store.jpg" alt="">
+                    </div>
+                    <div class="item slogan">
+                        <h3>花若盛開，蝴蝶自來。</h3>                   
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="wrap bottom">
-                <div class="picContainer bottom">
-                    <img src="image/pic/contact/bottom1.jpg" alt="">
-                </div>
-                <div class="picContainer bottom">
-                    <img src="image/pic/contact/bottom2.jpg" alt="">
-                </div>
-                <div class="picContainer bottom">
-                    <img src="image/pic/contact/bottom3.webp" alt="">
-                </div>
-                <div class="picContainer bottom">
-                    <img src="image/pic/contact/bottom4.jpg" alt="">
-                </div>
+        <section class="slider-pics-jquery">
+            <div id="sliderBoard" class="sliderBoard">
+                <ul id="content" class="slider-pics-content">
+                    <li>
+                        <div class="picContainer picContainer-slider">
+                            <img src="./image/pic/contact/10.jpg" class="image">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="picContainer picContainer-slider">
+                            <img src="./image/pic/contact/11.jpg" class="image">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="picContainer picContainer-slider">
+                            <img src="./image/pic/contact/12.jpg" class="image">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="picContainer picContainer-slider">
+                            <img src="./image/pic/contact/13.jpg" class="image">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="picContainer picContainer-slider">
+                            <img src="./image/pic/contact/14.jpg" class="image">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="picContainer picContainer-slider">
+                            <img src="./image/pic/contact/16.jpg" class="image">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="picContainer picContainer-slider">
+                            <img src="./image/pic/contact/15.jpg" class="image">
+                        </div>
+                    </li>                    
+                    <li>
+                        <div class="picContainer picContainer-slider">
+                            <img src="./image/pic/contact/17.webp" class="image">
+                        </div>
+                    </li>
+                </ul>
+                <ul id="contentButton" class="slider-pics-contentButton">
+                    <!-- <li class="clicked"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li> -->
+                </ul>
             </div>
         </section>
     </main>
