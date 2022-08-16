@@ -27,8 +27,8 @@ function init(){
     }
 }
 function addItem(itemId,itemValue){
-    alert(`${itemId}: ${itemValue}`)
-    console.log(cartPanel);
+    // alert(`${itemId}: ${itemValue}`)
+    // console.log(cartPanel);
     // cartPanel.style.display = "block";
 // -----------------------------------
     var oDiv = document.createElement("div");
