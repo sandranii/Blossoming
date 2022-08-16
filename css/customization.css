@@ -131,7 +131,6 @@ section.title .wrap .title-txt{
     right: 0;
 }
 /* ------RWD------------ */
-
 @media screen and (min-width: 768px){
     .view{
         max-width: 600px;

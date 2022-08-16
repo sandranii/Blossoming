@@ -113,6 +113,7 @@ h2.title-CH{
     width: 100%;
     margin: auto;
     padding: 2.5rem 1.25rem;
+    box-sizing: border-box;
 }
 h3.subtitle{
     text-align: center;
