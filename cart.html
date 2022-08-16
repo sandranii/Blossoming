@@ -14,15 +14,152 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <script src="./javascript/jquery-3.6.0.min.js"></script>
     <script src="./javascript/weekly-bouquet.js"></script>
+    <style>
+        section{
+            max-width: 1200px;
+            margin: 100px auto;
+            width: 100%;      
+            /* margin-top: 90px; */
+        }
+        body{
+            color: var(--text);
+        }
+        .cart-content{
+            max-width: 1200px;
+            width: 50%;      
+            margin: auto;
+            background-color: var(--rice);
+            padding: 20px 10% 40px 10%;
+
+        }
+        .cart-content-title{
+            font-size: 20px;
+            padding: 20px 0;
+            color: var(--title);
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-<div>
-    <p>尺寸: <span id="size"></span></p>
-    <p>風格: <span id="style"></span></p>
-    <p>主題: <span id="theme"></span></p>
-    <p>配送: <span id="delivery"></span></p>
-    <p>開始日: <span id="date"></span></p>
-    <p>數量: <span id="amount"></span></p>
-</div>
+    <header>
+        <nav class="main-nav-bar">
+            <input type="checkbox" name="" id="menu-switch">
+            <div class="main-nav-container">
+                <a href="./index.html" class="logo-link">
+                    <img class="logo" src="./image/icon/Logo A.svg" alt="">
+                </a>
+                <!-- 主導覽列 -->
+                <div class="main-menu-container">
+                    <ul class="main-menu-list">
+                        <li class="main-menu-list-item">
+                            <a class="main-menu-list-item-label" href="./products-fresh-bouquet.html">新鮮花束</a>
+                        </li>
+                        <li class="main-menu-list-item">
+                            <a class="main-menu-list-item-label" href="">永生花</a>
+                        </li>
+                        <li class="main-menu-list-item">
+                            <a class="main-menu-list-item-label" href="">求婚花束</a>
+                        </li>
+                        <li class="main-menu-list-item">
+                            <a class="main-menu-list-item-label" href="./weekly-bouquet.html">週花訂閱</a>
+                        </li>
+                        <li class="main-menu-list-item">
+                            <a class="main-menu-list-item-label" href="./customization.html">客製商品</a>
+                        </li>
+                        <li id="mainMenuDropdown" class="main-menu-list-item dropdown">
+                            <a class="main-menu-list-item-label" href="javascript:void(0)">花藝課程
+                                <img id="expandMore" class="expand-more" src="./image/icon/expand-more.svg" alt="">
+                            </a>
+                            <ul id="dropdownNav" class="dropdown_nav">
+                                <li class="dropdown_nav_item"><a href="./floral-courses.html#basket">歐式盆花課程</a></li>
+                                <li class="dropdown_nav_item"><a href="./floral-courses.html#arrangement">零基礎插花課</a></li>
+                                <li class="dropdown_nav_item"><a href="./floral-courses.html#hand-tied">手綁花束課程</a></li>
+                            </ul>
+                        </li>                        
+                        <li class="main-menu-list-item">
+                            <a class="main-menu-list-item-label" href="contact-us.html">聯絡我們</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 功能導覽列 -->
+                <div class="action-menu">
+                    <a href="./cart.html" class="action-menu cart">
+                        <img class="icon" src="./image/icon/shopping-cart.svg" alt="">
+                    </a>
+                    <a href="" class="action-menu login">
+                        <img class="icon" src="./image/icon/account.svg" alt=""></a>
+                    </a>
+                </div>
+                <!-- 漢堡 -->
+                <label for="menu-switch" class="HB">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="cart-content">
+                <h2 class="cart-content-title">購物車</h2>
+                <p>尺寸: <span id="size"></span></p>
+                <p>風格: <span id="style"></span></p>
+                <p>主題: <span id="theme"></span></p>
+                <p>配送: <span id="delivery"></span></p>
+                <p>開始日: <span id="date"></span></p>
+                <p>數量: <span id="amount"></span></p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">      
+            <div class="main-footer">
+                <div class="link">
+                    <div class="logo">
+                        <a href="index.html" class="logo-link">
+                            <img class="logo" src="./image/icon/Logo A.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="icon-list">
+                        <ul>
+                            <li><a href=""><img src="./image/icon/facebook.png" alt=""></a></li>
+                            <li><a href=""><img src="./image/icon/instagram.png" alt=""></a></li>
+                            <li><a href=""><img src="./image/icon/line.png" alt=""></a></li>
+                            <li><a href="mailto: blossoming.florist@gmail.com"><img src="./image/icon/mail.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info-txt">
+                        <h3>聯絡資訊</h3>
+                        <ul>
+                            <li>電話： 0912-345-678</li>
+                            <li>地址： 桃園市桃園區復興路1號</li>
+                            <li>信箱： blossoming.florist@gmail.com</li>
+                            <li>服務時間： 週一至週六 10:00 – 18:00</li>
+                        </ul>
+                    </div>
+                    <div class="contact-info-pic">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.9305472599526!2d121.31540364964494!3d24.990047816555563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681efa8b69e255%3A0x3c89fe39620994ca!2sNo.%201%2C%20Fuxing%20Rd%2C%20Taoyuan%20District%2C%20Taoyuan%20City%2C%20330!5e0!3m2!1sen!2stw!4v1658337321722!5m2!1sen!2stw" width="240" height="168" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <nav class="footer">
+                <ul>
+                    <li><a href="weekly-bouquet.html">週花訂閱</a></li>
+                    <li><a href="">常見問題</a></li>
+                    <li><a href="">花草照護</a></li>
+                    <li><a href="">場地佈置</a></li>
+                    <li><a href="contact-us.html">聯絡我們</a></li>
+                    <li><a href="">關於花開</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>Copyright © Blossoming 2022. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

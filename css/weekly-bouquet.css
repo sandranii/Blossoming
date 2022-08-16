@@ -278,7 +278,7 @@ section.txt .wrap{
     .option-list-item button, .option-list-item input{
         margin-left: 0.2rem;
         margin-right:  0.2rem;
-        padding: 0.375rem 0.75rem;
+        padding: 0.375rem;
         font-size: 1.125rem;
     }
     .option-list-item button:hover{

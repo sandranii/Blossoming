@@ -7,8 +7,8 @@ let fillAmount = document.getElementsByClassName("fill-amount");
 let cartPanel = document.getElementById;("cartPanel");
 
 function init(){
-    let cartPanel = document.getElementById("cartPanel");
-let btnClosePanel = document.getElementById("btnClosePanel");
+//     let cartPanel = document.getElementById("cartPanel");
+// let btnClosePanel = document.getElementById("btnClosePanel");
     console.log(cartPanel);
     console.log(btnClosePanel);
     console.log(btnPlus);

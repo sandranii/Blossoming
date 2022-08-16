@@ -61,6 +61,7 @@ $(document).ready(function(){
         // return;
         // localStorage.setItem("cart", JSON.stringify(select));
         localStorage.setItem("amount", fillAmount[i].value);
+        alert("已加入購物車, 請點購物車icon!")
     })
     let size = localStorage.getItem('size');
     let style = localStorage.getItem('style');
