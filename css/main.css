@@ -374,7 +374,7 @@ button.number:hover{
 }
 
 /* ------------cart-panel------------------ */
-.cart-panel.closed{
+.cart-panel-closed{
     display: none;
     position: fixed;
     top: 0 ;
@@ -391,10 +391,11 @@ button.number:hover{
     transition: all 0.25s;
     transform: translate(200px, 0);
 }
-/* -------toggle class "closed"------ */
-.cart-panel{
+.cart-panel-closed.show{
     display: block;
 }
+/* -------toggle class "closed"------ */
+
 .cart-panel-title{
     width: 50%;
     margin: 1.5rem;
