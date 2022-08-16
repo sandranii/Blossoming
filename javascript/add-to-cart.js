@@ -7,8 +7,8 @@ let fillAmount = document.getElementsByClassName("fill-amount");
 let cartPanel = document.getElementById("cartPanel");
 
 function init(){
-//     let cartPanel = document.getElementById("cartPanel");
-// let btnClosePanel = document.getElementById("btnClosePanel");
+    let cartPanel = document.getElementById("cartPanel");
+    let btnClosePanel = document.getElementById("btnClosePanel");
     console.log(cartPanel);
     console.log(btnClosePanel);
     console.log(btnPlus);
@@ -33,7 +33,7 @@ function addItem(itemId,itemValue){
 // -----------------------------------
     var oDiv = document.createElement("div");
     oDiv.className = "row-cart-item";
-    oDiv.innerHTML += `<img src= "../image/pic/products/fresh-bouquet/${itemValue.split("|")[0]}" width="100" height="100">`;
+    oDiv.innerHTML += `<img src= "./image/pic/products/fresh-bouquet/${itemValue.split("|")[0]}" width="100" height="100">`;
     oDiv.innerHTML += `<span><div>${itemValue.split('|')[1]}</div><div>$${itemValue.split('|')[2]}元</div></span>`;
 
     oDiv.innerHTML +=`<div class="amount"><button type="button" class="number btnMinus">－</button><input type="text" class="fill-amount" min="1" value="1" data-option="amount"><button type="button" class="number btnPlus">＋</button></div>`;
