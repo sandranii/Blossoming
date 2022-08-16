@@ -375,21 +375,17 @@ button.number:hover{
 
 /* ------------cart-panel------------------ */
 .cart-panel-closed{
-    display: none;
+    /* display: none; */
     position: fixed;
     top: 0 ;
     right: 0;
     bottom: 0;
     left: auto;
     z-index: 10;
-    visibility: hidden;
     padding: 0;
-    /* width: 420px; */
+    width: 420px;
     background-color: var(--rice-n-grey);
     box-shadow: 0 0 87px 0 rgb(0 0 0 / 9%);
-    opacity: 0;
-    transition: all 0.25s;
-    transform: translate(200px, 0);
 }
 .cart-panel-closed.show{
     display: block;
