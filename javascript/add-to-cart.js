@@ -2,16 +2,27 @@ let storage = localStorage;
 let btnMinus = document.getElementsByClassName("btnMinus");
 let btnPlus = document.getElementsByClassName("btnPlus");
 let fillAmount = document.getElementsByClassName("fill-amount");
+// ================================================================
+
+// // 為什麼把cartPanel/btnClosePanel 寫在 function init 外面, console.log(object) 會顯示null???
 // let cartPanel = document.getElementById("cartPanel");
 // let btnClosePanel = document.getElementById("btnClosePanel");
+// console.log(cartPanel);
+// console.log(btnClosePanel);
+// //但最上面的四個變數都可以顯示
+// console.log(btnMinus);
 let cartPanel = document.getElementById("cartPanel");
+let btnClosePanel = document.getElementById("btnClosePanel");
+//把cartPanel/btnClosePanel 寫在 function init 內, clg可顯示
 
 function init(){
-    let cartPanel = document.getElementById("cartPanel");
-    let btnClosePanel = document.getElementById("btnClosePanel");
-    console.log(cartPanel);
-    console.log(btnClosePanel);
-    console.log(btnPlus);
+    // console.log(cartPanel);
+    // console.log(btnClosePanel);
+    // console.log(btnMinus);
+    // console.log(btnPlus);
+    // console.log(fillAmount);
+    // console.log(storage);
+
     if(storage['addItemList'] == null){
         storage['addItemList'] = ''    // storage.setItem('addItemList','')
     }
@@ -21,11 +32,14 @@ function init(){
         list[i].addEventListener('click',function(e){
             let productInfo = document.querySelector(`#${e.target.id} input`).value
 
-            addItem(e.target.id, productInfo);
-            // cartSwitch();
+            addItem(e.target.id, productInfo); //寫在addItem(e.target.id, productInfo)裡面的意思???
+            cartSwitch(); // 切換面板開關
+            console.log(cartPanel);
+            console.log(btnClosePanel);
         })
     }
 }
+//寫在addItem(itemId,itemValue)裡面的意思???
 function addItem(itemId,itemValue){
     // alert(`${itemId}: ${itemValue}`)
     // console.log(cartPanel);
@@ -68,19 +82,22 @@ function addItem(itemId,itemValue){
         var result = confirm("確定要刪除此商品嗎?");
         if (result) {
             newItem.removeChild(oDiv);
-            number--;
+            // number--; //number還沒define
             getAmount();
         }
     }
 }
-// function cartSwitch(itemId,itemValue){
-//     console.log(cartPanel);
-//     //打開購物車
-//     // cartPanel.classList.remove("closed");
-//     cartPanel.style.display = "block";
-//     //關閉購物車
-//     btnClosePanel.onclick= function(){
-//         cartPanel.classList.toggle("closed");
-//     }
-// }
+function cartSwitch(){
+    console.log(cartPanel);
+    console.log(btnClosePanel);
+    console.log(btnMinus);
+    //打開購物車
+    // cartPanel.classList.remove("closed"); //重新進main.css裡面檢查class寫法, 看能不能用transition/opacity做淡入淡出/或從右邊translate推進來
+    cartPanel.style.display = "block";
+    //關閉購物車
+    btnClosePanel.onclick= function(){
+        // cartPanel.classList.toggle("closed");
+        cartPanel.style.display = "none";
+    }
+}
 window.addEventListener("load", init);
