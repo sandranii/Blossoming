@@ -1,16 +1,18 @@
 /* --------------------------background-image--- */
-body{
+body {
     background-image: url(../image/pic/weekly-bgflower-ps2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 /* ------------------Section----- */
-section{
+section {
     width: 100%;
 }
+
 /* ------------------go-to-top----- */
-button.go-to-top{
+button.go-to-top {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -23,16 +25,19 @@ button.go-to-top{
     z-index: 2;
     display: none;
 }
-button.go-to-top:hover{
+
+button.go-to-top:hover {
     cursor: pointer;
     border: 1px solid #d08b66b8;
     background-color: #d08b66b8;
 }
+
 /* ------------------Banner----- */
-section.full.banner{
+section.full.banner {
     margin-top: 60px;
 }
-.banner-container{
+
+.banner-container {
     margin: 0 auto;
     width: 100%;
     max-height: 580px;
@@ -40,40 +45,45 @@ section.full.banner{
     overflow: hidden;
     position: relative;
 }
-.banner-video{
+
+.banner-video {
     width: 100%;
     height: 100%;
     vertical-align: top;
     object-fit: cover;
     object-position: center top;
 }
-.banner-txt{
+
+.banner-txt {
     position: absolute;
     bottom: 4%;
     right: 4%;
     color: rgba(255, 255, 255, 1);
     font-size: 1.2rem;
     line-height: 150%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     letter-spacing: 0.015em;
     text-align: right;
 }
+
 /* ------------------Weekly 週花----- */
-section.weekly{  
+section.weekly {
     /* max-width: 1200px;   */
     width: 100%;
     margin: 0 auto;
     padding-bottom: 60px;
     /* background-color: #ff0; */
 }
-section.weekly .wrap{
+
+section.weekly .wrap {
     max-width: 1200px;
     width: 100%;
-    position: relative; 
+    position: relative;
     margin: auto;
     /* background-color: red; */
 }
-.weekly-bgcanvas{
+
+.weekly-bgcanvas {
     width: 100%;
     margin: auto;
     max-width: 1030px;
@@ -83,23 +93,27 @@ section.weekly .wrap{
     /* border-radius: 87px 0px 0px 0px; */
     box-sizing: border-box;
 }
+
 /* -----週花區---------------------- */
-.weekly-bouquet{
+.weekly-bouquet {
     width: 100%;
     margin: auto;
 }
+
 /* -----週花照片---------------------- */
-.weekly-pic{
+.weekly-pic {
     margin: auto;
     padding: 40px 0 20px 0;
     width: 75%;
     position: relative;
 }
-.picContainer-weekly-pic img{
+
+.picContainer-weekly-pic img {
     width: 100%;
     vertical-align: bottom;
 }
-.nametag{
+
+.nametag {
     position: absolute;
     left: 0;
     bottom: 20px;
@@ -109,28 +123,33 @@ section.weekly .wrap{
     font-size: 1.5rem;
     color: #C5977E;
 }
+
 /* -----週花描述---------------------- */
-.weekly-txt{
+.weekly-txt {
     max-width: 390px;
     margin: auto;
     padding: 50px 20px 80px 20px;
 }
-h2.title-weekly-txt{
+
+h2.title-weekly-txt {
     text-align: center;
     padding-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
+
 /* -----共用title---------------------- */
-span.title-CH{
+span.title-CH {
     font-size: 1.75rem;
 }
-small.title-EN{
+
+small.title-EN {
     font-size: 1.25rem;
 }
+
 /* -----週花title---------------------- */
-.weekly-txt span.title-CH{
+.weekly-txt span.title-CH {
     display: block;
     color: var(--brown);
     /* padding-right: 15px;
@@ -138,14 +157,16 @@ small.title-EN{
     padding-right: 4%;
     padding-bottom: 4%;
 }
-.weekly-txt small.title-EN{
+
+.weekly-txt small.title-EN {
     color: var(--brown);
     position: relative;
     /* padding-top:  30px; */
     padding-left: 4%;
 }
+
 /* -----週花title slash---------------------- */
-h2.title-weekly-txt small.title-EN::before{
+h2.title-weekly-txt small.title-EN::before {
     content: "";
     display: block;
     width: 100px;
@@ -156,50 +177,61 @@ h2.title-weekly-txt small.title-EN::before{
     right: 70%;
     top: 0;
 }
-h3.subtitle{
+
+h3.subtitle {
     font-size: 1.25rem;
     color: var(--second-color);
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
     padding: 25px 22px;
 }
-p.description{
+
+p.description {
     font-size: 1rem;
     line-height: 200%;
-    color: rgba(120, 120, 120, 0.8); 
+    color: rgba(120, 120, 120, 0.8);
     padding: 40px 40px 100px 40px;
     display: block;
     margin: auto;
 }
-.weekly-price-foot{
+
+.weekly-price-foot {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-p.weekly-price{
+
+p.weekly-price {
     font-size: 1.375rem;
     color: #D89B7B;
     text-shadow: 1px 1px 1px #ffffff;
 }
+
 /* ----------------------產品總覽---------- */
-section.products, section.courses, section.products-Swiper, section.courses-Swiper{
+section.products,
+section.courses,
+section.products-Swiper,
+section.courses-Swiper {
     max-width: 1200px;
     width: 100%;
     margin: auto;
     margin-bottom: 60px;
 }
+
 /* -----產品&課程 共用title--------------------- */
-.title{
+.title {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 40px;  
+    margin-bottom: 40px;
     color: rgba(82, 79, 79, 0.83);
 }
-.title small.title-EN{
+
+.title small.title-EN {
     margin-left: 6px;
 }
+
 /* ----花藝課程title------------------- */
-.title-courses{
+.title-courses {
     justify-content: flex-start;
     margin: 25px 20px 50px 20px;
     max-width: 430px;
@@ -208,11 +240,13 @@ section.products, section.courses, section.products-Swiper, section.courses-Swip
     box-sizing: border-box;
     background: linear-gradient(90deg, rgba(227, 189, 189, 0.45) 59.72%, rgba(227, 189, 189, 0) 101.51%);
 }
-.title-courses h2.title-CH{
+
+.title-courses h2.title-CH {
     margin-left: 32px;
 }
+
 /* -------產品卡片------------------ */
-a.products-card-link{
+a.products-card-link {
     display: block;
     margin: 25px auto;
     max-width: 320px;
@@ -220,41 +254,49 @@ a.products-card-link{
     overflow: hidden;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .2);
 }
-.products-list{
+
+.products-list {
     margin: auto;
     margin-bottom: 20px;
 }
-.products-card-pic{
+
+.products-card-pic {
     overflow: hidden;
 }
-.products-card-pic img{
+
+.products-card-pic img {
     vertical-align: top;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
 }
-.products-card-pic img:hover{
-    transform: scale(1.1,1.1);
+
+.products-card-pic img:hover {
+    transform: scale(1.1, 1.1);
     transition: 1s;
 }
-.products-card-txt{
+
+.products-card-txt {
     margin: auto;
     padding: 15px;
     box-sizing: border-box;
     background-color: #fff;
 }
-.products-card-txt h3{
+
+.products-card-txt h3 {
     text-align: center;
     font-size: 1.25rem;
     color: rgba(82, 79, 79, 0.83);
 }
-.products-card-txt h3.products-item-EN{
+
+.products-card-txt h3.products-item-EN {
     color: rgba(82, 79, 79, 0.59);
     margin-top: 10px;
 }
+
 /* ----客製商品--------------------------- */
-.products-customize{
+.products-customize {
     max-width: 1200px;
     width: 100%;
     margin: auto;
@@ -262,30 +304,36 @@ a.products-card-link{
     justify-content: center;
     align-items: center;
 }
-.products-customize p{
+
+.products-customize p {
     font-size: 1.25rem;
     color: rgba(100, 100, 100, 0.8);
     padding-right: 10px;
 }
+
 /* ----花藝課程卡片start------------------- */
-.products-list.course{
+.products-list.course {
     justify-content: center;
     align-items: center;
 }
-.products-list.course .products-card{
+
+.products-list.course .products-card {
     filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.23));
     position: relative;
 }
-.products-list.course .products-card-pic{
+
+.products-list.course .products-card-pic {
     width: 100%;
 }
+
 /* ----花藝課程中間卡片------------------- */
-.products-list.course .main{
+.products-list.course .main {
     position: relative;
     z-index: 1;
 }
+
 /* ----花藝課程字卡------------------- */
-.products-list.course .products-card-txt{
+.products-list.course .products-card-txt {
     background-color: rgba(210, 191, 166, 0.82);
     position: absolute;
     left: 0;
@@ -293,72 +341,93 @@ a.products-card-link{
     padding: 15px;
     width: 100%;
 }
-.products-list.course .products-card-txt h3{
+
+.products-list.course .products-card-txt h3 {
     color: #fff;
 }
+
 /* --------------------------RWD手機--- */
 
 @media screen and (max-width:767px) {
-    :root{
+    :root {
         font-size: 14px;
     }
-    section.products-tab, section.courses-tab{
+
+    section.products-tab,
+    section.courses-tab {
         display: none;
     }
 }
+
 /* --------------------------RWD平板直向--- */
 
 @media screen and (min-width: 768px) {
-    section.products-mb, section.courses-mb{
+
+    section.products-mb,
+    section.courses-mb {
         display: none;
     }
-    section.products-tab, section.courses-tab{
+
+    section.products-tab,
+    section.courses-tab {
         display: block;
     }
-    .banner-txt{
+
+    .banner-txt {
         font-size: 1.625rem;
     }
-/* -----週花區---------------------- */
-    .weekly-bouquet{
+
+    /* -----週花區---------------------- */
+    .weekly-bouquet {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .picContainer-weekly-pic{
+
+    .picContainer-weekly-pic {
         width: 100%;
         background-color: #fff;
     }
-/* -----週花照片---------------------- */
-    .weekly-pic{
+
+    /* -----週花照片---------------------- */
+    .weekly-pic {
         padding: 0;
         width: 33.333333%;
     }
-    .nametag{
+
+    .nametag {
         bottom: 0;
     }
-/* -----週花描述---------------------- */
-    .weekly-txt{
+
+    /* -----週花描述---------------------- */
+    .weekly-txt {
         width: 66.666666%;
         padding: 80px 0;
     }
-/* -----週花title---------------------- */
-    .weekly-txt span.title-CH{
+
+    /* -----週花title---------------------- */
+    .weekly-txt span.title-CH {
         padding-right: 8%;
         padding-bottom: 6%;
     }
-    .weekly-txt small.title-EN{
+
+    .weekly-txt small.title-EN {
         padding-left: 8%;
     }
-    h3.subtitle{
+
+    h3.subtitle {
         padding: 15px 22px;
     }
-    p.description{
+
+    p.description {
         padding: 20px 10px 40px 38px;
     }
-    a.products-card-link{
+
+    a.products-card-link {
         margin: 0 20px;
     }
-    .products-list{
+
+    .products-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -367,66 +436,76 @@ a.products-card-link{
         margin: auto;
         margin-bottom: 20px;
     }
-    .products .products-customize{
+
+    .products .products-customize {
         justify-content: flex-end;
     }
+}
+
 /* --------------------------RWD平板橫向--- */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
+
     /* -----週花區---------------------- */
-    section.weekly{  
-        /* height: 750px; */
-    }
-    .weekly-bouquet{    
+    .weekly-bouquet {
         max-width: 850px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 0 auto;
-        /* background-color: #f00; */
-    } 
-    .weekly-bgcanvas{
+    }
+
+    .weekly-bgcanvas {
         max-width: 1030px;
         background-color: rgba(226, 216, 201, 0.95);
         border: 6px solid rgba(255, 255, 255, 0.53);
     }
-    .weekly-bouquet .weekly-pic{
+
+    .weekly-bouquet .weekly-pic {
         border-radius: 200px 200px 0 0;
         max-width: 400px;
         padding-top: 0px;
         width: 100%;
     }
-    span.title-CH{
+
+    span.title-CH {
         font-size: 2rem;
     }
-    small.title-EN{
+
+    small.title-EN {
         font-size: 1.5rem;
     }
-    h3.subtitle{
+
+    h3.subtitle {
         font-size: 1.375rem;
     }
 
-    p.description{
+    p.description {
         padding: 50px 10px 100px 38px;
         letter-spacing: 0.04rem;
     }
-    .weekly-price-foot{
+
+    .weekly-price-foot {
         padding-bottom: 40px;
     }
 }
+
 /* --------------------------RWD桌機--- */
-@media screen and (min-width: 1200px){
-    .banner-txt{
+@media screen and (min-width: 1200px) {
+    .banner-txt {
         font-size: 2rem;
     }
 }
+
 /* ====SWIPER==== */
 .products-list .swiper {
     width: 100%;
     height: 100%;
 }
-.swiper-wrapper{
+
+.swiper-wrapper {
     padding-bottom: 30px;
 }
+
 .products-list .swiper-slide {
     text-align: center;
     /* Center slide text vertically */
@@ -446,30 +525,36 @@ a.products-card-link{
     transform: scale(0.8);
     opacity: 0.5;
 }
+
 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .products-list .swiper-slide-active,
-.products-list .swiper-slide-duplicate-active{
+.products-list .swiper-slide-duplicate-active {
     transform: scale(1);
     z-index: 1;
     opacity: 1;
 }
-.products-list .swiper-pagination{
+
+.products-list .swiper-pagination {
     z-index: 4;
     bottom: 0;
 }
+
 .swiper-pagination-bullet {
     opacity: 1;
-    background: rgba(0,0,0,0.2);
-}
-.swiper-pagination-bullet-active {
-background: linear-gradient(45deg, rgb(246, 146, 89), rgb(241, 105, 117));
+    background: rgba(0, 0, 0, 0.2);
 }
 
-.mySwiper .swiper-button-prev, .swiper-button-next{
-   color:rgba(208, 139, 102, 0.6);
+.swiper-pagination-bullet-active {
+    background: linear-gradient(45deg, rgb(246, 146, 89), rgb(241, 105, 117));
+}
+
+.mySwiper .swiper-button-prev,
+.swiper-button-next {
+    color: rgba(208, 139, 102, 0.6);
 }
